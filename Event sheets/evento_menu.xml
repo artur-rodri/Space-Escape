@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evento_menu</name>
+    <events>
+        <variable constant="0" name="0_zeroGame_1" sid="442533821585468" static="0" type="number">0</variable>
+        <variable constant="0" name="0_zeroGame_2" sid="964829927943194" static="0" type="number">0</variable>
+        <variable constant="0" name="0_zeroGame_3" sid="676895631669982" static="0" type="number">0</variable>
+        <variable constant="0" name="0_zeroGame_4" sid="385529221363865" static="0" type="number">0</variable>
+        <event-block sid="793826829638974">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="520687666947501" type="System" />
+                <condition id="-14" name="Compare variable" sid="855691214681342" type="System">
+                    <param id="0" name="Variable">0_zeroGame_1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="274138050988684" type="System">
+                    <param id="0" name="Variable">0_zeroGame_2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="716034836723535" type="System">
+                    <param id="0" name="Variable">0_zeroGame_3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="305806474364684" type="System">
+                    <param id="0" name="Variable">0_zeroGame_4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="206141265981445" type="System">
+                    <param id="0" name="Layout">agradecimentos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="143599540760907">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="930600080897916" type="Mouse">
+                    <param id="0" name="Object">quit</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="301205422333719" type="Mouse">
+                    <param id="0" name="Object">start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="234506732035413" type="menu">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="248219363395177" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="327160957594006">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="299083548040226" type="Mouse">
+                    <param id="0" name="Object">start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="538515000740504" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="639613821158672" type="menu">
+                    <param id="0" name="Animation">&quot;start&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="162001819504578">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="229712388621144" type="Mouse">
+                    <param id="0" name="Object">quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="380581537080568" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="467663162056466" type="menu">
+                    <param id="0" name="Animation">&quot;quit&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="763823377226994">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="553326625036207" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="818167980447527" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="790656224473641" type="System">
+                    <param id="0" name="Layout">sub_menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="537286206601073">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="603379206120270" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">quit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="477149346885003" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+                <action id="17" name="Execute Javascript" sid="419195672111347" type="Browser">
+                    <param id="0" name="Javascript">&quot;process.exit(1);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="499576346376415">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="239420188556826" type="Mouse">
+                    <param id="0" name="Object">go_sala1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="320040060214977" type="Sprite">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="193362205446449" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="911747687785346">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="314543569432556" type="Mouse">
+                    <param id="0" name="Object">voltar_menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="553132542879458" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277950348721112">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="266516434821809" type="Mouse">
+                    <param id="0" name="Object">go_sala2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="210956938041750" type="Sprite">
+                    <param id="0" name="Animation">&quot;Animation3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="218976141790361" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="457734119336980">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="848795178882102" type="Mouse">
+                    <param id="0" name="Object">go_sala3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="365033910399492" type="Sprite">
+                    <param id="0" name="Animation">&quot;Animation4&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="858547912501006" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="894882094755289">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="426817421052281" type="Mouse">
+                    <param id="0" name="Object">go_sala4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="123708885340349" type="Sprite">
+                    <param id="0" name="Animation">&quot;Animation5&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="341226654879513" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="545127926667574">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="432315481632448" type="Mouse">
+                    <param id="0" name="Object">go_sala5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="366414472313844" type="Sprite">
+                    <param id="0" name="Animation">&quot;Animation6&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="216045044126252" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="916731193685200">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="500581397636730" type="Mouse">
+                    <param id="0" name="Object">go_sala6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="104338615113968" type="Sprite">
+                    <param id="0" name="Animation">&quot;Animation7&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="827302433611488" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="499498138946747">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="488640360355388" type="Mouse">
+                    <param id="0" name="Object">go_sala1</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="190933456291516" type="Mouse">
+                    <param id="0" name="Object">go_sala2</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="215596658853650" type="Mouse">
+                    <param id="0" name="Object">go_sala3</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="693547214420225" type="Mouse">
+                    <param id="0" name="Object">go_sala4</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="949931413438148" type="Mouse">
+                    <param id="0" name="Object">go_sala5</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="795262431766263" type="Mouse">
+                    <param id="0" name="Object">go_sala6</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="276275389208675" type="Mouse">
+                    <param id="0" name="Object">voltar_menu</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="840294485292091" type="Mouse">
+                    <param id="0" name="Object">quit</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="199373922891721" type="Mouse">
+                    <param id="0" name="Object">start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="206384015726596" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="158126229587102" type="Sprite">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="959987345748370">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="631464365286156" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">go_sala1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="425142860231829" type="System">
+                    <param id="0" name="Layout">meio_sala</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="983934575402372" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="961371589096831">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="761554795642587" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">go_sala2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="352202773489877" type="System">
+                    <param id="0" name="Layout">dir_sala2</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="168844491199803" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="630364501051990">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="632339811962919" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">voltar_menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="369283069876332" type="System">
+                    <param id="0" name="Layout">menu</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="452006563196339" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="967045989822111">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="694093312873650" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">go_sala3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="432905615644853" type="System">
+                    <param id="0" name="Layout">meio_sala3</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="216097428231709" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887094284988051">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="730559650775587" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">go_sala4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="754197880453102" type="System">
+                    <param id="0" name="Layout">meio_sala4</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="685036031540775" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="807848045503893">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="970901138471695" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">go_sala5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="976003206090103" type="System">
+                    <param id="0" name="Layout">sem_sala</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="595020756186852" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="251987917147644">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="101915010647561" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">go_sala6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="410939055021244" type="System">
+                    <param id="0" name="Layout">sem_sala</param>
+                </action>
+                <action id="0" name="Set cursor style" sid="524919073656058" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

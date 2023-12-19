@@ -1,0 +1,2339 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evento_sala2</name>
+    <events>
+        <variable constant="0" name="2_questionario" sid="979812197658912" static="0" type="number">0</variable>
+        <variable constant="0" name="2_toalha" sid="354013287138693" static="0" type="number">0</variable>
+        <variable constant="0" name="2_confere" sid="289214622535858" static="0" type="number">0</variable>
+        <variable constant="0" name="2_agua_sistema1" sid="528034181049625" static="0" type="number">0</variable>
+        <variable constant="0" name="2_bar" sid="807523362307152" static="0" type="number">0</variable>
+        <variable constant="0" name="2_dialogo" sid="295663306294640" static="0" type="number">0</variable>
+        <variable constant="0" name="2_banheira" sid="232972075133472" static="0" type="number">0</variable>
+        <variable constant="0" name="2_balde" sid="640997720810051" static="0" type="number">0</variable>
+        <event-group description="" sid="648086881221299" title="all_2">
+            <sub-events>
+                <event-group description="" sid="558540516670089" title="sala_2">
+                    <sub-events>
+                        <event-block sid="539379280333027">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="191846404436371" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="977798796106809" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="459929656671527" type="sala_esq2">
+                                    <param id="0" name="Frame number">6</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="980250618816557" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="820936683221738">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="747989197964443" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="687557120253495" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="643987679750636" type="balde_movel">
+                                    <param id="0" name="X">761</param>
+                                    <param id="1" name="Y">664</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="913715007013161">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="861794105858986" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="387973000328563" type="toalha_movel" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="131581205617701" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="947213974247397" type="toalha_movel">
+                                    <param id="0" name="X">758</param>
+                                    <param id="1" name="Y">665</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="163444411579070">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="962736310005363" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="371502674069718" type="2_chave_movel" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="123988703475821" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="321671977967676" type="2_chave_movel">
+                                    <param id="0" name="X">758</param>
+                                    <param id="1" name="Y">665</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="102605254573994">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="220901844237590" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="456871257116173" type="balde_movel">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="718606157039383" type="balde_fixo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="576233210200403" type="balde_movel">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="376783063438282">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="848356900163527" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="355941217522918" type="balde_fixo" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="758382742071201">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="394060738814573" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="408945546655227" type="balde_movel">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="703913454515281" type="balde_fixo">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="265322892432184">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="297905023526331" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="961013805366387" type="balde_movel">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="666489708559380" type="balde_fixo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="919500538268524" type="balde_movel">
+                                    <param id="0" name="Animation">&quot;agua&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="609793294024625">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="679053919571846" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="559795099448108" type="toalha_movel">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="932746066387323" type="balde_fixo" />
+                                <action id="-16" name="Wait" sid="434407078466199" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="368701279405959">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="914008687146152" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="593434784285382" type="toalha_movel">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="483352015424008" type="sala_meio2">
+                                    <param id="0" name="Animation">&quot;toalha&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="218354256132493">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="539211261538216" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="661373442693945" type="sala_esq2">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="638974274738864">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="439886238197910" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="508337192571510" type="sala_esq2">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="641499099582680" type="sala_esq2">
+                                    <param id="0" name="Frame number">6</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="744254427684463" type="nao_tem_agua">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="988934940787240">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="512267529342020" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="621346072222671" type="sala_esq2">
+                                    <param id="0" name="Animation">&quot;certo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="226025728770825" type="balde_movel">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="769572173979190" type="balde_fixo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="132182115210901" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="764331244382494">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="753164558776016" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="272923053178044" type="sala_esq2">
+                                    <param id="0" name="Animation">&quot;certo_2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="895063645831394" type="balde_movel">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="134915798589077">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="188361146668086" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="212397232035430" type="sala_meio2">
+                                    <param id="0" name="Animation">&quot;chave&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="337862132331401">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="688515419919640" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="225341093167095" type="sala_meio2">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="338758192036819" type="2_chave_movel">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="225479756520941">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="748287511901276" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="711340134791781" type="sala_meio2">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="597825362049141" type="sala_dir2">
+                                    <param id="0" name="Animation">&quot;aberta&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="421383509901217" type="2_chave_movel" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="541521093974512" title="sair_2">
+                    <sub-events>
+                        <event-block sid="738365519218634">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="521427361372746" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="100065856772860" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="535277258342224" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="996929285089297" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="724649686157489" type="System">
+                                    <param id="0" name="Variable">2_banheira</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="214712554531141" type="System">
+                                    <param id="0" name="Variable">2_bar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="409340721576934" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="955583645959981" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="595154707848911" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="781136643007915" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="681321582891498" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="881137235333831">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="187119552522184" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="667469087365150" type="off">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="587933883629081" type="off">
+                                    <param id="0" name="X">485</param>
+                                    <param id="1" name="Y">863</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="740445180996026">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="256176088694740" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="826584933805189" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="673948461410813" type="off">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="156079236305669">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="930558804550621" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="206108168443279" type="off">
+                                    <param id="0" name="Animation">&quot;sim&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="606098497036761">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="671346714013321" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="460887215548748" type="off">
+                                    <param id="0" name="Animation">&quot;nao&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="322044669253260">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="551017248812940" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="456970685686630" type="System">
+                                    <param id="0" name="Group name">&quot;sair_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="856765314452940" type="off">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="700735146875613" type="off">
+                                    <param id="0" name="X">512</param>
+                                    <param id="1" name="Y">384.5</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="690276947914149" type="System">
+                                    <param id="0" name="Group name">&quot;painel&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="294152159981146" title="navegacao_2">
+                    <sub-events>
+                        <event-block sid="254548476722180">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="777746124951615" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_1_2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="848746493941728" type="System">
+                                    <param id="0" name="Layout">meio_sala2</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="725526943704444" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="357442434682417">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="432801187369285" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_2_1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="938392927165868" type="System">
+                                    <param id="0" name="Layout">dir_sala2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="539633879564925">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="598815596032782" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_2_3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="682002192621719" type="System">
+                                    <param id="0" name="Layout">esq_sala2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="396961209411858">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="829697711663687" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_3_2</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="406756365479498" type="sala_esq2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="273802673501344" type="System">
+                                    <param id="0" name="Layout">meio_sala2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="136566874862747">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="761101832180912" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_3_2</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="627328063583741" type="sala_esq2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="198142575570672" type="System">
+                                    <param id="0" name="Layout">meio_sala2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="722448063897313" title="dir_sala_2">
+                    <sub-events>
+                        <event-block sid="414652287551598">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="207469718788979" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">balde_fixo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="197004157595896" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="865417398028969" type="balde_fixo">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="199330254735555" type="balde_movel">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="861564122647270">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="331213433913548" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_saida</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="538499656377416" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="285077226292601" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="979337509843174" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="859243552616845" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="399247598778888" type="System">
+                                    <param id="0" name="Variable">2_banheira</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="335065174062758" type="System">
+                                    <param id="0" name="Variable">2_bar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="904651137196065" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="789517156186734" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="956455303771848" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="679083291328886" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="893972258966808" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="779772329201073" type="System">
+                                    <param id="0" name="Variable">0_zeroGame_2</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="735057126301338">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="902781644800499" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="186868591452662" type="2_chave_movel">
+                                    <param id="0" name="Object">2_saida</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="327249264100900" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="667482486310364" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="376057368366555" title="esq_sala_2">
+                    <sub-events>
+                        <event-block sid="267928830505968">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="259232779126098" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">alien_banheira</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="778453140845213" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="254235530943959" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="725603081857696" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="764458373645911" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="678309972243410" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="693374782162960" type="balde_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="805619754311943" type="toalha_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="726419260463516" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="855832391119713">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="831191248051385" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">alien_banheira</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="822808730247854" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="133692266583427" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="341903593005075" type="nao_tem_agua">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="594787500129509" type="nao_tem_agua">
+                                    <param id="0" name="Animation">&quot;questao&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="790956523251911" type="sala_esq2">
+                                    <param id="0" name="Animation">&quot;testando_banheira&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="185764447623739" type="sala_esq2">
+                                    <param id="0" name="Frame number">7</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="828667859249189" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="655083947045747" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="996031392030324" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="749493975056135" type="balde_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="196744580913135" type="toalha_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="116094587728141" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">12</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="629231686851254">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="612550374612427" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">btn_agua</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="557155597935857" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="797732259538558" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="795747770061457" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="910827535947966" type="sala_esq2">
+                                    <param id="0" name="Frame number">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="395192493790272">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="234025034274912" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="757773486712211" type="balde_movel">
+                                    <param id="0" name="Object">bota_agua</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="138988416862506" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="738782706712425" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="896510256234451" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="296382715239886">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="242749147498429" type="sala_esq2">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="326995657831943" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="538231646556633" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="183708021823150" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="208757192297341" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="891307982703464" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="297554957930348" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="923031739913355" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="822395156173671" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="409093283774896" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="492899683754017" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="401140883309414">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="520459454433305" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">toalha</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="954947683673465" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="175658348031912" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="844517929181558" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="883374844750006" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="187436913177114" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="834048894445608" type="toalha_movel">
+                                    <param id="0" name="X">758</param>
+                                    <param id="1" name="Y">665</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="464935020657968" title="meio_sala_2">
+                    <sub-events>
+                        <event-block sid="952691092122997">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="309906010847030" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">alien_bar</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="376856948248090" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="706303617435146" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="740671552034704" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="428876346058469" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="191413424906681" type="balde_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="527296375925499" type="toalha_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="536980758624452" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="539132288555176" type="System">
+                                    <param id="0" name="Variable">2_bar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="876416910463054">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="191253149468730" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">questionario</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="170811544501806" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="470641115893294" type="System">
+                                    <param id="0" name="Layout">quest_sala2</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="154950942861034" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="962990275727199" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="238359680231362" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="980138088749554" type="System">
+                                    <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="883165229282493">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="140723335154241" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="417311527585725" type="balde_movel">
+                                    <param id="0" name="Object">alien_bar</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="596648474169563" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="591091013380769" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="277771863746773" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="300602044292524" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="510285802011112" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="678547386432933" type="balde_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="581648356582214" type="toalha_movel">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="264782406783517" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="301714908349349" type="System">
+                                    <param id="0" name="Variable">2_bar</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="962691950944767">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="423411269822069" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="584327333728767" type="toalha_movel">
+                                    <param id="0" name="Object">alien_bar</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="253679368420545" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="152893535411119" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="307442159888596">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="909824259825703" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_chave</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="750733877131456" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="480523704907724" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="564572588629630" title="dialogos_2">
+            <sub-events>
+                <event-block sid="453569475511716">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="232399994968780" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="518633611125438">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="834771616585182" type="System">
+                            <param id="0" name="Variable">2_dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="196639086256020">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="208439160730116" type="System">
+                                    <param id="0" name="Variable">2_banheira</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="549244115940317" type="nao_tem_agua">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="177314001031648" type="nao_tem_agua">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="791342706482412">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="974305395865083" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="666623382896358" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="978164757246669" type="nao_tem_agua">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="437567812594365" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="265072264877572" type="System">
+                                            <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="285042400575715" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="530380054822428" type="System">
+                                            <param id="0" name="Variable">2_dialogo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="620243794773043" type="balde_movel">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="463967118285243" type="toalha_movel">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="855377238653497">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="697602875553160" type="System">
+                            <param id="0" name="Variable">2_dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="284660860024566">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="535605367331664" type="resultadoi">
+                                    <param id="0" name="Text">&quot;0.125&quot;</param>
+                                    <param id="1" name="Case">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="654711498506671" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="402937211982263" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="987924611648262" type="sala_esq2">
+                                    <param id="0" name="Animation">&quot;certo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="488390899565082" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="469713085831319" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="897977463848752" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="512417511165672" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="163868935047543" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="129428940802980" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="131589760280098" type="balde_movel">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="858942936877097" type="toalha_movel">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="660479201205161">
+                            <conditions>
+                                <condition id="0" inverted="1" name="Compare text" sid="851922619582155" type="resultadoi">
+                                    <param id="0" name="Text">&quot;0.125&quot;</param>
+                                    <param id="1" name="Case">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="690784660759885" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="749121056142863" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Set text" sid="639696945640881" type="resultadoi">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="164030288203037" type="nao_tem_agua">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="378587425054586" type="nao_tem_agua">
+                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="604441114919813" type="sala_esq2">
+                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="434778858872128" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="795032456275446" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="505075338525005" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="690060863830580" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="210975888498316" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="198287750032886" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="848233864003284" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="710408351367492" type="balde_movel">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="168783813214491" type="toalha_movel">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="177100912578129">
+                            <conditions>
+                                <condition id="1" name="On any click" sid="485134655877021" type="Mouse" />
+                                <condition id="-14" name="Compare variable" sid="646229989390674" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="528016058145183" type="nao_tem_agua">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="749888923532184" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="3" name="Set visible" sid="567732629364276" type="resultadoi">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="139072309266210" type="resultadoi">
+                                    <param id="0" name="X">408</param>
+                                    <param id="1" name="Y">720</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="173946366649572" type="nao_tem_agua">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="621784628269652">
+                            <conditions>
+                                <condition id="-4" inverted="1" name="Is outside layout" sid="408612463251645" type="resultadoi" />
+                                <condition id="2" name="Key is down" sid="174214458289878" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="582104150806319" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="599268017998209" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="3" name="Set visible" sid="433431180377934" type="resultadoi">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="638338990178033" type="resultadoi">
+                                    <param id="0" name="X">406</param>
+                                    <param id="1" name="Y">813</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="420062630021547" type="sala_esq2">
+                                    <param id="0" name="Frame number">7</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="299532844327828" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="898911593455004" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="389215044256055" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="873188123054090" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="976431281985016" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="641514437203146" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="392945123201019" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="328584650757568" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="126404614389384" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="145683639506872" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="462016493046888" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="351552682609518" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="629422288854786" type="sala_esq2">
+                                    <param id="0" name="Frame number">sala_esq2.AnimationFrame-1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="444761176379250" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="838480349428295">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="822795357580982" type="System">
+                            <param id="0" name="Variable">2_dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="946923000585798">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="450055909391858" type="System">
+                                    <param id="0" name="Variable">2_bar</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="107254832582843" type="meuPano">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="496593742789880" type="meuPano">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="430854658137633">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="591300205658271" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="175403024040017" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="741533262138361" type="meuPano">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="581541555547600" type="System">
+                                            <param id="0" name="Variable">2_dialogo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="604911605546498" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="464372595340832" type="System">
+                                            <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="802445136584747" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="463675000277873" type="balde_movel">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="571175666501752" type="toalha_movel">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="670044915920269">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="280535824875866" type="System">
+                                    <param id="0" name="Variable">2_bar</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="807280320564849" type="meuPano">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="756186980736329" type="meuPano">
+                                    <param id="0" name="Animation">&quot;agua&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="557557173569749">
+                                    <conditions />
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="912668933141762" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="906698096462692" type="balde_movel">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="122839477949504" type="sala_meio2">
+                                            <param id="0" name="Animation">&quot;agua&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="327007177756348" type="System">
+                                            <param id="0" name="Seconds">2.5</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="688466180448124" type="balde_movel">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="153066925982446" type="sala_meio2">
+                                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="386389824740723" type="meuPano">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="591641861917500" type="System">
+                                            <param id="0" name="Variable">2_balde</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="601467974852330" type="System">
+                                            <param id="0" name="Variable">2_dialogo</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="180671716414199" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="672294239370862" type="System">
+                                            <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="311300514668846" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="424360402038375" type="balde_movel">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="872296673218650" type="toalha_movel">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="223655760371175">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="329208735861408" type="System">
+                            <param id="0" name="Variable">2_dialogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="147706541123993" type="System">
+                            <param id="0" name="Group name">&quot;all_2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="520707820637269" type="System">
+                            <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="904967633749843">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="929299807134948" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="405036274824040" type="System">
+                                    <param id="0" name="Seconds">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="849542307660631" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="600217505992473" type="meuPano">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="531263369640061" type="meuPano">
+                                    <param id="0" name="Animation">&quot;certo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="486180152049198" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="328796946942022" type="meuPano">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="105503509632024" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="269878781669027" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="563407608768734" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="291463270274887" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="303328578137515">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="126943853530518" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="366038500617343" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="528422345263277" type="meuPano">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="443304862770369" type="meuPano">
+                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="806585141034017" type="System">
+                                    <param id="0" name="Seconds">1.5</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="659462859880779" type="meuPano">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="964627241816702" type="System">
+                                    <param id="0" name="Variable">2_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="236493031464546" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="829718579459532" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="813060343176530" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="217985063658875" title="cursor_2">
+            <sub-events>
+                <event-block sid="322508121505418">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="514299482413523" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="410330880147185">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="148265653896337" type="Mouse">
+                            <param id="0" name="Object">2_1_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="348014912879176" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="791799065209306">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="607621073174472" type="Mouse">
+                            <param id="0" name="Object">2_2_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="191997855239424" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="402910606430862">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="880238305312416" type="Mouse">
+                            <param id="0" name="Object">2_2_3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="722287563955867" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="128552440394977">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="733769468307973" type="Mouse">
+                            <param id="0" name="Object">2_3_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="383650823786116" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="488169152043854" title="sala_dir2">
+                    <sub-events>
+                        <event-block sid="581675620984704">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="645683459070819" type="Mouse">
+                                    <param id="0" name="Object">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="527581201228419" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="279257968177531">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="340005840688789" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="595575101169526" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="101079984700770" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="110262280950890">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="891894660088024" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="330757867819495" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="438355019100487" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="746788422420224">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="343342061841670" type="Mouse">
+                                    <param id="0" name="Object">balde_fixo</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="219646752187300" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="137420644396724" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="336311917509312">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="937234124123613" type="Mouse">
+                                    <param id="0" name="Object">balde_movel</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="313162906987709" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="741022137218502" type="balde_movel" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="758816794351576" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="715292068120719">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="799167300177883" type="Mouse">
+                                    <param id="0" name="Object">2_saida</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="839732284907470" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="124899265270963" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="797318352797890" title="esq_sala2">
+                    <sub-events>
+                        <event-block sid="701652106624105">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="117002423885293" type="Mouse">
+                                    <param id="0" name="Object">alien_banheira</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="521557373222248" type="System">
+                                    <param id="0" name="Variable">2_confere</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="296766387905059" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="706295783874317">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="557615869384045" type="Mouse">
+                                    <param id="0" name="Object">toalha</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="515212213565871" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="634122975122651" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="204242224705634">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="204041227605216" type="Mouse">
+                                    <param id="0" name="Object">toalha_movel</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="165724957854852" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="672653632688700" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489321400462462">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="240477212710115" type="Mouse">
+                                    <param id="0" name="Object">bota_agua</param>
+                                </condition>
+                                <condition behavior="DragDrop" id="0" name="Is dragging" sid="293057134278377" type="balde_movel" />
+                                <condition id="-14" name="Compare variable" sid="210842600734960" type="System">
+                                    <param id="0" name="Variable">2_balde</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="389501198320538" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="797062479082616">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="443636765322089" type="Mouse">
+                                    <param id="0" name="Object">btn_agua</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="546640715859737" type="System">
+                                    <param id="0" name="Variable">2_agua_sistema1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="437889603901794" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="957421201828790" title="meio_salaa2">
+                    <sub-events>
+                        <event-block sid="874311003193794">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="501707797473970" type="Mouse">
+                                    <param id="0" name="Object">alien_bar</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="943086037193629" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="758910623427969" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="167791109560115">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="349551289572012" type="Mouse">
+                                    <param id="0" name="Object">questionario</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="879175768364769" type="System">
+                                    <param id="0" name="Variable">2_toalha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="293399496632493" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="486670894680282">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="528030617134827" type="Mouse">
+                                    <param id="0" name="Object">2_chave</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="583315109242287" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="297488058858789" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="664283123922740">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="267191804328998" type="Mouse">
+                                    <param id="0" name="Object">2_chave_movel</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="610622880381343" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="615140198567923" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="632238713166930" title="questionario_2">
+            <sub-events>
+                <event-block sid="529919006626066">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="518771084311442" type="2_background" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-group description="" sid="458835031497884" title="cursor_questionario_2">
+                            <sub-events>
+                                <event-block sid="952115967702348">
+                                    <conditions />
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="990420099358964" type="Mouse">
+                                            <param id="0" name="Cursor style">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="845960624610868">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="508682353876243" type="Mouse">
+                                            <param id="0" name="Object">2_quest1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="341243720906979" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="654569716398069">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="254656175540076" type="Mouse">
+                                            <param id="0" name="Object">2_quest2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="609149488946218" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="479040669567326">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="845965068499699" type="Mouse">
+                                            <param id="0" name="Object">2_quest3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="766279183860208" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="453820174487852">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="714626387550806" type="Mouse">
+                                            <param id="0" name="Object">2_quest4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="125778313359269" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="568936301567106">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="485825954083601" type="Mouse">
+                                            <param id="0" name="Object">2_quest5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="902322283144942" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="954432349030703" title="quest_respostas_2">
+                            <sub-events>
+                                <event-group description="" sid="315911916304330" title="res_2">
+                                    <sub-events>
+                                        <event-block sid="366112827467154">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="571043136952432" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">2_quest1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="583609719097895">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="682562477039183" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-2" name="Go to layout" sid="494733413567416" type="System">
+                                                            <param id="0" name="Layout">meio_sala2</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="383561461525591" type="System">
+                                                            <param id="0" name="Variable">2_dialogo</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="941497768518921" type="System">
+                                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="192433865914529" type="System">
+                                                            <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="645155120740523">
+                                                    <conditions>
+                                                        <condition id="3" inverted="1" name="Compare frame" sid="530856855540944" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="198146681477997" type="2_quest">
+                                                            <param id="0" name="Frame number">2_quest.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="864671908044241">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="974244339748763" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">2_quest2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="377064395224492">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="102770516501036" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Add to" sid="567703119803713" type="System">
+                                                            <param id="0" name="Variable">2_questionario</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                        <action id="-2" name="Go to layout" sid="435701837605135" type="System">
+                                                            <param id="0" name="Layout">meio_sala2</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="903980335936110" type="System">
+                                                            <param id="0" name="Variable">2_dialogo</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="794012827598226" type="System">
+                                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="667850514093978" type="System">
+                                                            <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="659326694881842">
+                                                    <conditions>
+                                                        <condition id="3" inverted="1" name="Compare frame" sid="915195812529238" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="511115614621762" type="2_quest">
+                                                            <param id="0" name="Frame number">2_quest.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="210355954072680">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="277198756377679" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">2_quest3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="506211772419204">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="952806913985713" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-2" name="Go to layout" sid="324205485985469" type="System">
+                                                            <param id="0" name="Layout">meio_sala2</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="167428870104805" type="System">
+                                                            <param id="0" name="Variable">2_dialogo</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="239478928032622" type="System">
+                                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="417196614964382" type="System">
+                                                            <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="202666679955948">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="356158962315444" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Add to" sid="695873388450523" type="System">
+                                                            <param id="0" name="Variable">2_questionario</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="422573389736307">
+                                                    <conditions>
+                                                        <condition id="3" inverted="1" name="Compare frame" sid="824283826810465" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="986986979382404" type="2_quest">
+                                                            <param id="0" name="Frame number">2_quest.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="991365906841348">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="829308396668905" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">2_quest4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="819779082466496">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="810007543831292" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-2" name="Go to layout" sid="826081639574005" type="System">
+                                                            <param id="0" name="Layout">meio_sala2</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="448993858856944" type="System">
+                                                            <param id="0" name="Variable">2_dialogo</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="240612739437988" type="System">
+                                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="211594696382079" type="System">
+                                                            <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="109161101303721">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="536201771065083" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-10" name="Add to" sid="805933910869340" type="System">
+                                                            <param id="0" name="Variable">2_questionario</param>
+                                                            <param id="1" name="Value">1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="606555629598514">
+                                                    <conditions>
+                                                        <condition id="3" inverted="1" name="Compare frame" sid="471431034312181" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="764077783636401" type="2_quest">
+                                                            <param id="0" name="Frame number">2_quest.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="464026613576017">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="332323792819721" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">2_quest5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions />
+                                            <sub-events>
+                                                <event-block sid="711040424057369">
+                                                    <conditions>
+                                                        <condition id="3" name="Compare frame" sid="868486876300732" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-2" name="Go to layout" sid="389118351688211" type="System">
+                                                            <param id="0" name="Layout">meio_sala2</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="520070135817170" type="System">
+                                                            <param id="0" name="Variable">2_dialogo</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="699712311283957" type="System">
+                                                            <param id="0" name="Group name">&quot;dialogos_2&quot;</param>
+                                                            <param id="1" name="State">1</param>
+                                                        </action>
+                                                        <action id="-12" name="Set group active" sid="468167395795365" type="System">
+                                                            <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                                            <param id="1" name="State">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="394827627512704">
+                                                    <conditions>
+                                                        <condition id="3" inverted="1" name="Compare frame" sid="734983400112863" type="2_quest">
+                                                            <param id="0" name="Comparison">0</param>
+                                                            <param id="1" name="Number">2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="815919715954736" type="2_quest">
+                                                            <param id="0" name="Frame number">2_quest.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                        <event-block sid="813067958533889">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="541926840120579" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_background</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="430336735363826" type="Mouse">
+                                    <param id="0" name="Object">2_quest</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="135927457942413" type="System">
+                                    <param id="0" name="Layout">meio_sala2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="557577773283264" type="System">
+                                    <param id="0" name="Variable">2_questionario</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="375039485522284" type="System">
+                                    <param id="0" name="Group name">&quot;all_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="996072398217915" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_2&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="994608217023089" type="System">
+                                    <param id="0" name="Group name">&quot;questionario_2&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

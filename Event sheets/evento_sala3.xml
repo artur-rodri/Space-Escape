@@ -1,0 +1,2512 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evento_sala3</name>
+    <events>
+        <variable constant="0" name="3_liberacao" sid="660326178629770" static="0" type="number">0</variable>
+        <variable constant="0" name="3_tipo_espelho" sid="810594320497475" static="0" type="number">0</variable>
+        <variable constant="0" name="3_posicao_vela" sid="773791242003668" static="0" type="number">1</variable>
+        <variable constant="0" name="3_espelh_baixo" sid="562270290655079" static="0" type="number">10</variable>
+        <variable constant="0" name="3_espelh_cima" sid="519323966797059" static="0" type="number">10</variable>
+        <variable constant="0" name="3_rato" sid="951199878027335" static="0" type="number">0</variable>
+        <event-group description="" sid="487173207197610" title="all_3">
+            <sub-events>
+                <event-group description="" sid="764303157424626" title="janela_esquerda_3">
+                    <sub-events>
+                        <event-group description="" sid="391146494954599" title="botoes_3">
+                            <sub-events>
+                                <event-block sid="872472178277154">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="714489740602349" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">botao1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="445245216102349" type="System">
+                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="480361823682007">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="347677749960146" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">botao2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="410737115340803" type="System">
+                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                            <param id="1" name="Value">2 </param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="300173503006788">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="334746469200139" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">botao3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="491096537963832" type="System">
+                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="231288053568707">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="493843900457988" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">botao4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="446908672760475" type="System">
+                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="957802821417410">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="513039490109926" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">botao5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="147675700041604" type="System">
+                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="202700239137643">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="873363034808666" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">troca_espelho</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-42" name="Signal" sid="319334946205721" type="System">
+                                            <param id="0" name="Tag">&quot;tipo_espelho&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="176752902770321">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="994502898611698" type="System">
+                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="998512964824505" type="System">
+                                            <param id="0" name="Tag">&quot;tipo_espelho&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="510810112482835" type="System">
+                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="311354281748281">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="747571318244441" type="System">
+                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="800042893180507" type="System">
+                                            <param id="0" name="Tag">&quot;tipo_espelho&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="291854914714340" type="System">
+                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="799735995570690" title="espelhos_3">
+                            <sub-events>
+                                <event-block sid="187096787593851">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="120435703355640" type="System">
+                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="202255837164495">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="729888466194965" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="146660331808992" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;concavo_1&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="732805098494123">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="499396885343025" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="569372969152517" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;concavo_2&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="985841398429857">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="695778583252491" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="572472164734894" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;concavo_3&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="702555953090960">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="918331757937135" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="324439437862283" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;concavo_4&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="909935677022439">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="936569714599712" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="690584689972023" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;concavo_5&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="248821488342350">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="604176984690366" type="System">
+                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="208361557007190">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="909906683422508" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="269399674338794" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;convexo_1&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="836891070163116">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="821165230021120" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="283189455202418" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;convexo_2&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="919163327622197">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="802921996090926" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="625395183568292" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;convexo_3&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="605235297415321">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="892617170853860" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="524283155196304" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;convexo_4&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="848946726403250">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="335718313906349" type="System">
+                                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="506756930422779" type="sala_esquerda">
+                                                    <param id="0" name="Animation">&quot;convexo_5&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="671407478082816" title="janela_direita_3">
+                    <sub-events>
+                        <event-group description="" sid="575387427412882" title="animacoes">
+                            <sub-events>
+                                <event-group description="" sid="709739610838101" title="espelho">
+                                    <sub-events>
+                                        <event-block sid="663251214107184">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="407939472340686" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="721531489267561" type="espelho_cima">
+                                                    <param id="0" name="Animation">&quot;l10&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="990715426466667">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="793766232685891" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="763451994760561" type="espelho_cima">
+                                                    <param id="0" name="Animation">&quot;l11&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="865298324214616">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="122536465538499" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="284112097712626" type="espelho_cima">
+                                                    <param id="0" name="Animation">&quot;l20&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="650019169567355">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="893821589303171" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="886992588652354" type="espelho_cima">
+                                                    <param id="0" name="Animation">&quot;l21&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="777075759462640">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="788108579707883" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="373846698495942" type="espelho_baixo">
+                                                    <param id="0" name="Animation">&quot;l10&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="300106683046370">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="121403527891196" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="551555349310602" type="espelho_baixo">
+                                                    <param id="0" name="Animation">&quot;l11&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="454446179255075">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="806481380460601" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="903567999003383" type="espelho_baixo">
+                                                    <param id="0" name="Animation">&quot;l20&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="928127377015299">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="453383563143628" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="622532990729168" type="espelho_baixo">
+                                                    <param id="0" name="Animation">&quot;l21&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="663459324459772" title="laser">
+                                    <sub-events>
+                                        <event-block sid="406808950188516">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="517451375044297" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="894084611995792" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l10&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="552308104450292">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="128099081725842" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="139314388492406" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l20&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="339920346752246">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="476614198112941" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="147545827322780" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="787103632110805" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l11_11&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="899198284694768">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="739568127540311" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="662789426365598" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="198009701929445" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l21_21&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="430684307962092">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="770918094584470" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="315162468969050" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="179745443286141" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l11_10&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="363892567973156">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="948952997011957" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="939045429299785" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="157433655340817" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l11_20_21&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="692743382171250">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="238258935297047" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="254585053532071" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="480309377819836" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l11_20_21&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="690503112507605">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="186336707402965" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="320506572504237" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="881423378021451" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l21_11_10&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="592523996469079">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="917728460148037" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="941727002410269" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="909353835452270" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l21_11_10&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="176729058978202">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="868536802889729" type="System">
+                                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="294117406535816" type="System">
+                                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="354482437071819" type="lasers3">
+                                                    <param id="0" name="Animation">&quot;l21_20&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="415273150800906" title="cima_orientacao">
+                            <sub-events>
+                                <event-block sid="805954691931242">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="595032950598457" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">btn_cima_orientacao</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-42" name="Signal" sid="128225192304519" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_orientacao&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="235468104349763">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="163744315809470" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="856902003369587" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="939385114332732" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="286748907403268">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="830001535732480" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">11</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="939635539893055" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="200319427487937" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="973655264000756">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="507481741258121" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="517671316597078" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="268366884739554" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">21</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="919530517872983">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="114119343504795" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">21</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="131646487962189" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="514054949907465" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">20</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="744317518162745" title="cima_lado">
+                            <sub-events>
+                                <event-block sid="906763517096948">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="988218715112333" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">btn_cima_lado</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-42" name="Signal" sid="207945895369104" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_lado&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="180170582120113">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="381811604551015" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="841475311923301" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="993065545936590" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">20</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="458076497850566">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="341821998038997" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">11</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="914841431817757" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="854633571578621" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">21</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="736467106139334">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="789685235706151" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="592162098826855" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="297968087277986" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="879182447938877">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="741647825690600" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">21</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="798296177892267" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_cima_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="632997463650288" type="System">
+                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="627128428934445" title="baixo_orientacao">
+                            <sub-events>
+                                <event-block sid="927452228308609">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="964513635344373" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">btn_baixo_orientacao</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-42" name="Signal" sid="204064994308602" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_orientacao&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="478894705118802">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="410076655906585" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="276870922505780" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="314067792341372" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="701187152483067">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="824683453874777" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">11</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="914406594093483" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="614410036649210" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="315982022542503">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="545157397428991" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="562135871410047" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="805452359039426" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">21</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="681181955709382">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="361409805258241" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">21</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="654410869369370" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_orientacao&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="691716485139724" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">20</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="257674131923311" title="baixo_lado">
+                            <sub-events>
+                                <event-block sid="584171926441109">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="269451845810779" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">btn_baixo_lado</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-42" name="Signal" sid="845008202662364" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_lado&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="983366948361176">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="346408385050974" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="979212980328240" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="270501846587220" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">20</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="123789606778159">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="310441828331480" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">11</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="194039727164506" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="452048089606554" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">21</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="471618883443444">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="127473720719248" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">20</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="816026874573058" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="919379967162708" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">10</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="465724692551749">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="402933361611178" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">21</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="697578994805898" type="System">
+                                            <param id="0" name="Tag">&quot;sinal_baixo_lado&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="449945769345076" type="System">
+                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                            <param id="1" name="Value">11</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="326909166410960" title="meio_sala_3">
+                    <sub-events>
+                        <event-block sid="764303701391956">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="196688067186012" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="314591787183415" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="533639189003211">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="752101463194658" type="System">
+                                    <param id="0" name="Variable">3_rato</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="832680176218062" type="sala">
+                                    <param id="0" name="Animation">&quot;rato_on&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="377073278261595">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="592125153164436" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">rato3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="409658439897822" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="917109424678450" type="sala">
+                                    <param id="0" name="Animation">&quot;rato_on&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="672776543559851" type="System">
+                                    <param id="0" name="Variable">3_rato</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="189367231056469" type="System">
+                                    <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="757450029970306" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="887515782382422" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="193357786395476">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="870431622945814" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">saida</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="780052123203405" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="907949053440831" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="995609762425916" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="642630257274573" type="System">
+                                    <param id="0" name="Variable">3_rato</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="128273737561216" type="System">
+                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="683666414502513" type="System">
+                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="403298751637981" type="System">
+                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="634285473807586" type="System">
+                                    <param id="0" name="Variable">3_tipo_espelho</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="740713545104079" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="819177996014779" type="System">
+                                    <param id="0" name="Variable">0_zeroGame_3</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="215497107496639">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="428539012160314" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_sala</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="791876670770830" type="System">
+                                    <param id="0" name="Layout">meio_sala3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-group description="" sid="442153976124589" title="verificador_respostas_3">
+                            <sub-events>
+                                <event-group description="" sid="596387287288238" title="animacoes_luzes_3">
+                                    <sub-events>
+                                        <event-block sid="873349516512083">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="779154845893716" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="907185097451538" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_1&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="453455122772483">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="882675685188780" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="767198995429957" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_2&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="218585858794963">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="955216516795764" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="541246136100857" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_3&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="386439989341701">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="556222096300993" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="737453932675254" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_4&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="514076933939438">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="807646326969367" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="354466732898918" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_5&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="199258505050176">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="554837308414662" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="464826715471917" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_6&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="130571914713898">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="886040480692637" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="900377663265518" type="liberacao">
+                                                    <param id="0" name="Animation">&quot;liberacao_7&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="115825517396612" type="sala">
+                                                    <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                                <event-group description="" sid="932982489866875" title="verifica_3">
+                                    <sub-events>
+                                        <event-block sid="670422298368218">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="845808084402905" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">liberacao</param>
+                                                </condition>
+                                                <condition id="-14" inverted="1" name="Compare variable" sid="560194882391714" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-14" inverted="1" name="Compare variable" sid="292766996057891" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                                <condition id="-4" name="Is outside layout" sid="966461619518542" type="off" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-42" name="Signal" sid="657026032226607" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="232433727175252">
+                                            <conditions>
+                                                <condition id="6" name="On object clicked" sid="986550218879148" type="Mouse">
+                                                    <param id="0" name="Mouse button">0</param>
+                                                    <param id="1" name="Click type">0</param>
+                                                    <param id="2" name="Object clicked">liberacao</param>
+                                                </condition>
+                                                <condition id="-4" name="Is outside layout" sid="900892664035844" type="off" />
+                                                <condition id="-14" name="Compare variable" sid="869548229112957" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="431320489860489" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="254969109732494" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-42" name="Signal" sid="487952213318523" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="911432222668181">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="901295739252205" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-41" name="Wait for signal" sid="136992849469322" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="653973852385511">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="334188133002029" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="697834768155876" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">5</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="477183706911422" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">10</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="365861875014305" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">2</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="774234159975366">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="525367192511542" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="212203869327197" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="326036261811049">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="349678177731349" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-41" name="Wait for signal" sid="124161448281375" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="477482733746907">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="584058724037001" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="383811290482051" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="418820404813220" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">20</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="541010223161843" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">3</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="918599009497616">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="602803326286111" type="System" />
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="595287143238959" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="340034679529002">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="446974759064766" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-41" name="Wait for signal" sid="830802594959738" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="438054020933262">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="276063457004153" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="968149305006401" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="137317679111063" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">21</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="482342896816717" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">20</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="844738860539070" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">4</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="462941267565372">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="600532172307473" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="399878685951004" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="821207241493412" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">11</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="708643668486899" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">10</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="642041052226821" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">4</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="298817642202152">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="378985925782600" type="System" />
+                                                        <condition id="-14" name="Compare variable" sid="887797415160535" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="661892785213944" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="305040841446656">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="892280765650139" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-41" name="Wait for signal" sid="659255488269872" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="699396570830761">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="508036688761742" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="416459780050422" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="997240728209089" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">11</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="560596898335731" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">11</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="392750468373396" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">5</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="249026108371324">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="363531271527344" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="563195852705030" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="743974980658627" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">21</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="497090427367490" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">21</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="948618754558900" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">5</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="765441299118898">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="383338802631480" type="System" />
+                                                        <condition id="-14" name="Compare variable" sid="430879944619710" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">4</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="936658101103322" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="674339263105816">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="492335127916229" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-41" name="Wait for signal" sid="385137570260209" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="701640544236286">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="345978411185804" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="120776868538436" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">11</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="490926987685640" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">20</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="704075778921450" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">6</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="803383765949542">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="563709416856990" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">1</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="856516659015219" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">11</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="347735278259712" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">21</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="310860913213970" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">6</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="521109486351892">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="987299235631215" type="System" />
+                                                        <condition id="-14" name="Compare variable" sid="408064189547728" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">5</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="352527125224206" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                        <event-block sid="508265127726611">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="833180722992648" type="System">
+                                                    <param id="0" name="Variable">3_liberacao</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-41" name="Wait for signal" sid="374048883952622" type="System">
+                                                    <param id="0" name="Tag">&quot;verifica_liberacao&quot;</param>
+                                                </action>
+                                            </actions>
+                                            <sub-events>
+                                                <event-block sid="803313112335126">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="999465546583198" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="554508285130925" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">2</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="181354761989985" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">21</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="453829559785484" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">10</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="517580843484576" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">7</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="948810836797769">
+                                                    <conditions>
+                                                        <condition id="-14" name="Compare variable" sid="519731286014098" type="System">
+                                                            <param id="0" name="Variable">3_tipo_espelho</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">0</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="725802544111696" type="System">
+                                                            <param id="0" name="Variable">3_posicao_vela</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">2</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="108404290808194" type="System">
+                                                            <param id="0" name="Variable">3_espelh_cima</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">21</param>
+                                                        </condition>
+                                                        <condition id="-14" name="Compare variable" sid="236114483422063" type="System">
+                                                            <param id="0" name="Variable">3_espelh_baixo</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">11</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="351913963554025" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">7</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="139576510556290">
+                                                    <conditions>
+                                                        <condition id="-22" name="Else" sid="219207466842491" type="System" />
+                                                        <condition id="-14" name="Compare variable" sid="409927771551316" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Comparison">0</param>
+                                                            <param id="2" name="Value">6</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="-9" name="Set value" sid="647443230353148" type="System">
+                                                            <param id="0" name="Variable">3_liberacao</param>
+                                                            <param id="1" name="Value">0</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="116417551639168" title="sair_3">
+                    <sub-events>
+                        <event-block sid="537290124927522">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="661727981513516" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="382901649268301" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="721917612147454" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="643268327859578" type="System">
+                                    <param id="0" name="Variable">3_rato</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="712037234956228" type="System">
+                                    <param id="0" name="Variable">3_espelh_baixo</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="851993330539726" type="System">
+                                    <param id="0" name="Variable">3_espelh_cima</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="267837481607969" type="System">
+                                    <param id="0" name="Variable">3_posicao_vela</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="299335442362565" type="System">
+                                    <param id="0" name="Variable">3_tipo_espelho</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="425107179479756" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="336710801984420">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="131064461382524" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="385182541220788" type="off">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="198392122781253" type="off">
+                                    <param id="0" name="X">485</param>
+                                    <param id="1" name="Y">863</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="907411431631578">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="646166055106955" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="183788491839236" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="739529952887387" type="off">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="481853591380029">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="292318382138219" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="676633203723384" type="off">
+                                    <param id="0" name="Animation">&quot;sim&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="757412180093759">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="250457346737625" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="886390874613295" type="off">
+                                    <param id="0" name="Animation">&quot;nao&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="596535577010226">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="276373576964882" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-24" name="Move to top" sid="389110320204539" type="off" />
+                                <action id="-15" name="Set visible" sid="683356343422095" type="off">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="583824717005933" type="off">
+                                    <param id="0" name="X">512</param>
+                                    <param id="1" name="Y">384.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="878869523971333" title="navegacao_3">
+                    <sub-events>
+                        <event-block sid="612748551564709">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="758777189817339" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">janela_direita</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="963409758155386" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="826009048843197" type="System">
+                                    <param id="0" name="Layout">janela_direita3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="550849249038191">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="303842284151274" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">janela_esquerda</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="611408100795224" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="295995014379428" type="System">
+                                    <param id="0" name="Layout">janela_esquerda3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="563037413280040" title="dialogos_3">
+            <sub-events>
+                <event-group description="" sid="193547970534475" title="rato_3">
+                    <sub-events>
+                        <event-block sid="781733983712577">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="456479982500801" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="996916702821159">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="819247836621632" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="858151856887476" type="dialogo_3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="271657210101060" type="dialogo_3">
+                                    <param id="0" name="Animation">&quot;dialogo_1&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="807256469514038">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="460135263486540" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="377226440314998" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="161448156013753" type="dialogo_3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="827034915539195" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="807668401764473" type="System">
+                                            <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="425112712070371" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="821369627106337">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="356320295767435" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="492212242221966" type="dialogo_3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="713273286802570" type="dialogo_3">
+                                    <param id="0" name="Animation">&quot;dialogo_2&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="789354347877041">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="637510491698089" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="447796357300538" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="471633753306095" type="dialogo_3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="930479419987724" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="509988590727030" type="System">
+                                            <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="168692519374664" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="118166307830705">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="730866982351457" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="846724325638660" type="dialogo_3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="538008850679528" type="dialogo_3">
+                                    <param id="0" name="Animation">&quot;dialogo_3&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="350674430706208">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="799221128805669" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="956581992751127" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="306665162259305" type="dialogo_3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="823301022049296" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="245010597171757" type="System">
+                                            <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="659270999246191" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="257760683375631">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="965545734791070" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="732970938455350" type="dialogo_3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="969564175756759" type="dialogo_3">
+                                    <param id="0" name="Animation">&quot;dialogo_4&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="384195428548301">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="665716430515875" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="990233304491888" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="101149133275768" type="dialogo_3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="696618905569958" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="930389422639780" type="System">
+                                            <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="631736250406169" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="171040528494980">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="775456474871795" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="169088555911295" type="dialogo_3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="318939271761369" type="dialogo_3">
+                                    <param id="0" name="Animation">&quot;dialogo_5&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="900451640896566">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="699488010181622" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="934020639596239" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="308199551827390" type="dialogo_3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="905204267334752" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="878953891840253" type="System">
+                                            <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="365838764289610" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="347685399708045">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="567000186869677" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="100954382515267" type="dialogo_3">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="845598526537241" type="dialogo_3">
+                                    <param id="0" name="Animation">&quot;dialogo_6&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="637807763368433">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="260386508101082" type="Mouse" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="361485573493291" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="237764219040462" type="dialogo_3">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="555102040212535" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_3&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="852716752798146" type="System">
+                                            <param id="0" name="Group name">&quot;all_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="790624296610690" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_3&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="589146803765754" title="cursor_3">
+            <sub-events>
+                <event-block sid="200542048295983">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="122641342003083" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="396788644751867">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="741998220405274" type="Mouse">
+                            <param id="0" name="Object">janela_direita</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="370015639705387" type="System">
+                            <param id="0" name="Variable">3_liberacao</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="317818992118980" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="731315842509032">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="487466962181365" type="Mouse">
+                            <param id="0" name="Object">janela_esquerda</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="393323692474313" type="System">
+                            <param id="0" name="Variable">3_liberacao</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="387973746412902" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="407955025447597">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="659968708933881" type="Mouse">
+                            <param id="0" name="Object">voltar_sala</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="217314226603674" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="334406267886244" title="meio_sala_cursor_3">
+                    <sub-events>
+                        <event-block sid="490488875234580">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="148881672399468" type="Mouse">
+                                    <param id="0" name="Object">liberacao</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="360576976414330" type="off" />
+                                <condition id="-14" inverted="1" name="Compare variable" sid="621297307993097" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="952574305616379" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="149080494728936">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="367494115062861" type="Mouse">
+                                    <param id="0" name="Object">rato3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="565920651858839" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="837170399839378" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="696113898978317">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="285472052722108" type="Mouse">
+                                    <param id="0" name="Object">saida</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="311052152924568" type="System">
+                                    <param id="0" name="Variable">3_liberacao</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="698230921693182" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="483124597702181" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="101752527091749" title="janela_direita_cursor_3">
+                    <sub-events>
+                        <event-block sid="571238487871171">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="762046960834956" type="Mouse">
+                                    <param id="0" name="Object">btn_baixo_lado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="499905836562065" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="351741354760741">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="989800854789953" type="Mouse">
+                                    <param id="0" name="Object">btn_baixo_orientacao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="360835019912559" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="173307694509807">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="689757405205827" type="Mouse">
+                                    <param id="0" name="Object">btn_cima_lado</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="705586733494154" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="944855316581666">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="830785628302707" type="Mouse">
+                                    <param id="0" name="Object">btn_cima_orientacao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="938272561913909" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="796439714041016" title="janela_esquerda_cursor_3">
+                    <sub-events>
+                        <event-block sid="944324886682376">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="388576015877209" type="Mouse">
+                                    <param id="0" name="Object">botao1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="375997747550194" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="887226170935552">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="741121721055598" type="Mouse">
+                                    <param id="0" name="Object">botao2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="317799020043921" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="574953932598900">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="176914409744157" type="Mouse">
+                                    <param id="0" name="Object">botao3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="630131751041813" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="333319904371447">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="691018921875365" type="Mouse">
+                                    <param id="0" name="Object">botao4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="184681081935246" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="555347759376670">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="810464398628542" type="Mouse">
+                                    <param id="0" name="Object">botao5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="543090585733646" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489501228879541">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="801760200828850" type="Mouse">
+                                    <param id="0" name="Object">troca_espelho</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="232909016407569" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="680161942703290" title="sair3">
+                    <sub-events>
+                        <event-block sid="464586121626079">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="608070885165903" type="Mouse">
+                                    <param id="0" name="Object">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="684983928278519" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="256271001493090">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="913485494235064" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="798652089941874" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="175829274802554" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="281131230409196">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="684903894116425" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="681093322202170" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="727452131060289" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

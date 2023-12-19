@@ -1,0 +1,1410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evento_sala4</name>
+    <events>
+        <variable constant="0" name="4_chave" sid="665501271771133" static="0" type="number">0</variable>
+        <variable constant="0" name="4_pilha" sid="110039213161194" static="0" type="number">0</variable>
+        <variable constant="0" name="4_status_medico" sid="164513083159884" static="0" type="number">0</variable>
+        <variable constant="0" name="4_dialogo" sid="852093866086482" static="0" type="number">0</variable>
+        <variable constant="0" name="4_alien_janela" sid="102004187332094" static="0" type="number">0</variable>
+        <event-group description="" sid="612144172931492" title="all_4">
+            <sub-events>
+                <event-group description="" sid="337259521766181" title="animacoes_4">
+                    <sub-events>
+                        <event-block sid="241710618492600">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="964066806445333" type="System">
+                                    <param id="0" name="Variable">4_alien_janela</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="984695898608785" type="janela_sala4">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="452200023618954" type="janela_dialogo4">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="754019814239918">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="955047557009774" type="System">
+                                    <param id="0" name="Variable">4_alien_janela</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="452121351405605" type="meio_sala4">
+                                    <param id="0" name="Animation">&quot;alien_fora&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="333700538780534">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="360939582724192" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="607029647677900" type="esquerda_sala4">
+                                    <param id="0" name="Animation">&quot;ligado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="831876620749174">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="438927123063185" type="System">
+                                    <param id="0" name="Variable">4_pilha</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="225307054940467" type="pilha">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="411198550508971">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="614909297773569" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="979428699920829" type="chave">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="805051249704697">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="342070690796107" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="543642775822636" type="chave" />
+                                <action id="4" name="Set animation" sid="234970517285571" type="meio_sala4">
+                                    <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="383167928411879" title="esquerda_sala_4">
+                    <sub-events>
+                        <event-block sid="580468904227987">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="274976190320750" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">alien_medico</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="697310687400512" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="146549154254985" type="System">
+                                    <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="965096057286547" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="540194229058043" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="395765514970157" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="779700909032642">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="437974751313712" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">botao_cardio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-42" name="Signal" sid="744869013290907" type="System">
+                                    <param id="0" name="Tag">&quot;verifica_cardio&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="690267127981541">
+                            <conditions>
+                                <condition id="0" name="Compare text" sid="877926939040599" type="text_cardio">
+                                    <param id="0" name="Text">&quot;60&quot;</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-41" name="Wait for signal" sid="439431282850862" type="System">
+                                    <param id="0" name="Tag">&quot;verifica_cardio&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="712358689091784" type="System">
+                                    <param id="0" name="Layout">esquerda_sala4</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="340063073812941" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="930564911898266" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="977160998297149" type="System">
+                                    <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="914071690240411" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="100667937797332" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="800716498057803">
+                            <conditions>
+                                <condition id="0" inverted="1" name="Compare text" sid="732097482414016" type="text_cardio">
+                                    <param id="0" name="Text">&quot;60&quot;</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-41" name="Wait for signal" sid="615258938640390" type="System">
+                                    <param id="0" name="Tag">&quot;verifica_cardio&quot;</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="606855561189449" type="System">
+                                    <param id="0" name="Layout">esquerda_sala4</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="573495317070142" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="911511601466222" type="System">
+                                    <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="155091096476519" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="708920827256300" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="445425940776664" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="252579962983680">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="260437047298634" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">eletro</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="951851824785160" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="920933557881982" type="System">
+                                    <param id="0" name="Layout">cardiograma4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="799940113299539" title="meio_sala_4">
+                    <sub-events>
+                        <event-block sid="367608207136726">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="824766372624505" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="772563937794464" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="671500174383081">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="545835715331489" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="149152172483307" type="chave">
+                                    <param id="0" name="Object">porta</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="815581939752524" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="166101141888249">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="185566472352687" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">porta</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="357530799685058" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="682245432783800" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="952648591673150" type="System">
+                                    <param id="0" name="Variable">4_alien_janela</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="692379411129706" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="906703329823944" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="352044577810126" type="System">
+                                    <param id="0" name="Variable">4_pilha</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="230816148248472" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="775558396552691" type="System">
+                                    <param id="0" name="Variable">0_zeroGame_4</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="234357389984450" title="janela_direita_4">
+                    <sub-events>
+                        <event-block sid="644131572390614">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="630442106177513" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">janela_alien4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="504364884959387" type="System">
+                                    <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="769000381295672" type="System">
+                                    <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="457229407229297" type="System">
+                                    <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="767682155649684" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="618473522284879" title="sair_4">
+                    <sub-events>
+                        <event-block sid="857595871576639">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="995283340834752" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="789018381117173" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="534811588056240" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="300251687509093" type="System">
+                                    <param id="0" name="Variable">4_alien_janela</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="381342883500954" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="788131079927975" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="419569928480144" type="System">
+                                    <param id="0" name="Variable">4_pilha</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="809256207660297" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="856427447659882">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="678601893318892" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="203186352998907" type="off">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="817598413775303" type="off">
+                                    <param id="0" name="X">485</param>
+                                    <param id="1" name="Y">863</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="237463280134698">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="916012844015139" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="187973682887767" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="929830328658721" type="off">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="642407694334357">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="720853684778694" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="542001183924445" type="off">
+                                    <param id="0" name="Animation">&quot;sim&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="904564732447485">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="181102172839731" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="401023221850687" type="off">
+                                    <param id="0" name="Animation">&quot;nao&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="915621699939879">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="569057063237050" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-24" name="Move to top" sid="847656110217617" type="off" />
+                                <action id="-15" name="Set visible" sid="856584640575270" type="off">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="841119408685724" type="off">
+                                    <param id="0" name="X">512</param>
+                                    <param id="1" name="Y">384.5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="711058604892385" title="navegacao_4">
+                    <sub-events>
+                        <event-block sid="708156995218579">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="357704832719698" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                                <condition id="1" name="Is overlapping another object" sid="539579675754288" type="pilha">
+                                    <param id="0" name="Object">eletro</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="135756087169432" type="System">
+                                    <param id="0" name="Variable">4_pilha</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="198725813332420" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="174296141749607" type="pilha" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="249814478898652">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="251108574602021" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="233291648036133" type="pilha">
+                                    <param id="0" name="X">845</param>
+                                    <param id="1" name="Y">620</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="270700375510082">
+                            <conditions>
+                                <condition id="3" name="On button released" sid="593058780227961" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="136154061906259" type="chave">
+                                    <param id="0" name="X">788</param>
+                                    <param id="1" name="Y">620</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="472720479634817">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="551544327427368" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">meio_para_esq4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="593409008145413" type="System">
+                                    <param id="0" name="Layout">esquerda_sala4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="920576579966956">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="586117444359265" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">esquerda_para_meio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="350050359631087" type="System">
+                                    <param id="0" name="Layout">meio_sala4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="301858343453629">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="322614305364317" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">ir_janela4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="875831919949902" type="System">
+                                    <param id="0" name="Variable">4_alien_janela</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="835954840299838" type="System">
+                                    <param id="0" name="Layout">janela_sala4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="446122550413951">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="740929379566876" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_meio4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="124598094432699" type="System">
+                                    <param id="0" name="Layout">meio_sala4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="882690290911288">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="840728146259737" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_esqrd4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="158876368329666" type="System">
+                                    <param id="0" name="Layout">esquerda_sala4</param>
+                                </action>
+                                <action id="0" name="Set text" sid="594578941570430" type="text_cardio">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="231129295209930" title="dialogos_4">
+            <sub-events>
+                <event-block sid="283753383364960">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="946739200563476" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="408634345985424" title="sala_esquerda_dialogo_4">
+                    <sub-events>
+                        <event-block sid="325412242518545">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="125091127746352" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="157654284757996">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="849830519027408" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="181486470523975" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="190393137486777" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="277641482105345" type="dialogo_medico">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="951642286302573" type="System">
+                                            <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="101899216078310" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="374979020897541" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="504263543992063">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="462760992666459" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="545690355815820" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="345579827069507" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="849853104426454" type="dialogo_medico">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="339833854510157" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="732626899809765" type="System">
+                                            <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="765721777863284" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="691952471388912" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="802752505703921">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="872622705535202" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="520695240756150" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="388240917581708" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="961609251954491" type="dialogo_medico">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="458328221771272" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="889151871816529" type="System">
+                                            <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="433207880783480" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="850445734129637" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="271698748997706">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="898003101977181" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="209721326109400" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="629828422535848" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="318181349768236" type="dialogo_medico">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="637742548935429" type="System">
+                                            <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="791956922928155" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="502833044925962" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="345228141735872" type="System">
+                                            <param id="0" name="Variable">4_status_medico</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="300140007642880" type="System">
+                                            <param id="0" name="Variable">4_chave</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-group description="" sid="311998703682522" title="animacoes_medico_4">
+                                    <sub-events>
+                                        <event-block sid="920082594524268">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="916254589584387" type="System">
+                                                    <param id="0" name="Variable">4_status_medico</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="192713427395888" type="dialogo_medico">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="582421482376417" type="dialogo_medico">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="538605190113452">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="857706309513992" type="System">
+                                                    <param id="0" name="Variable">4_status_medico</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="801678717164059" type="dialogo_medico">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="377794878399369" type="dialogo_medico">
+                                                    <param id="0" name="Animation">&quot;nao_medico&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="423767665445421">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="942295734893406" type="System">
+                                                    <param id="0" name="Variable">4_status_medico</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="445113113037129" type="dialogo_medico">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="594268158872272" type="dialogo_medico">
+                                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="932074839802770" type="esquerda_sala4">
+                                                    <param id="0" name="Animation">&quot;ligado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="967338920052895">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="955312085260205" type="System">
+                                                    <param id="0" name="Variable">4_status_medico</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="242175054494176" type="dialogo_medico">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="674044934129454" type="dialogo_medico">
+                                                    <param id="0" name="Animation">&quot;certo&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="445858563965700" type="esquerda_sala4">
+                                                    <param id="0" name="Animation">&quot;ligado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="761411745837508" title="janela_dialogo_4">
+                    <sub-events>
+                        <event-block sid="324822334673664">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="242899365060691" type="System">
+                                    <param id="0" name="Variable">4_dialogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="633671344678981">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="115236977915842" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="702454181780723" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="136215510497385" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="443156538247879" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="179562215163633">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="518004690016128" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">botao_osilos</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="682748043333464" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-42" name="Signal" sid="446555805032333" type="System">
+                                            <param id="0" name="Tag">&quot;verifica_text&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="616384443103555">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="393026206833638" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="645018284703910" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="198712998361910" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="698382355692129" type="System">
+                                            <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="252947423282001" type="System">
+                                            <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="365286779611331" type="System">
+                                            <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="893133880796462" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="484311979929770">
+                                    <conditions>
+                                        <condition id="1" name="On any click" sid="749445306295789" type="Mouse" />
+                                        <condition id="-14" name="Compare variable" sid="964940589037098" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-16" name="Wait" sid="301407320644684" type="System">
+                                            <param id="0" name="Seconds">0</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="205270279951689" type="System">
+                                            <param id="0" name="Layout">meio_sala4</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="634605576406779" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="967443607603371">
+                                    <conditions>
+                                        <condition id="0" name="Compare text" sid="225684069039775" type="text_janela4">
+                                            <param id="0" name="Text">&quot;125&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="499115413456230" type="System">
+                                            <param id="0" name="Tag">&quot;verifica_text&quot;</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="292741523499231" type="text_janela4">
+                                            <param id="0" name="X">364</param>
+                                            <param id="1" name="Y">806</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="624248799883049" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="465532477463051">
+                                    <conditions>
+                                        <condition id="0" inverted="1" name="Compare text" sid="943542111205442" type="text_janela4">
+                                            <param id="0" name="Text">&quot;125&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-41" name="Wait for signal" sid="572504193277669" type="System">
+                                            <param id="0" name="Tag">&quot;verifica_text&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="815618131201859" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="183144423672824" type="text_janela4">
+                                            <param id="0" name="X">364</param>
+                                            <param id="1" name="Y">806</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="721689022309865">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="629709085841006" type="Mouse">
+                                            <param id="0" name="Object">botao_osilos</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="355578955569287" type="System">
+                                            <param id="0" name="Variable">4_alien_janela</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="989602554246296" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-group description="" sid="423878560931868" title="animacoes_dialogo_4">
+                                    <sub-events>
+                                        <event-block sid="543974431086917">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="478694870330178" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="707342838716446" type="janela_dialogo4">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="435596528497232" type="janela_dialogo4">
+                                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="918325077705997">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="186841600005857" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="231708002124251" type="janela_sala4">
+                                                    <param id="0" name="Animation">&quot;osilos_Com_bateria&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="269323422304002" type="janela_dialogo4">
+                                                    <param id="0" name="Visibility">0</param>
+                                                </action>
+                                                <action id="-3" name="Set position" sid="306595106275900" type="text_janela4">
+                                                    <param id="0" name="X">306</param>
+                                                    <param id="1" name="Y">298</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="828897049335217">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="575412461187850" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="673059912362775" type="janela_dialogo4">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="106289423190659" type="janela_dialogo4">
+                                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="991267718077980" type="janela_sala4">
+                                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="555105426839256">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="466038389498790" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="464807466555808" type="janela_dialogo4">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="486198939741027" type="janela_dialogo4">
+                                                    <param id="0" name="Animation">&quot;pilha&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="4" name="Set animation" sid="966487002781698" type="janela_sala4">
+                                                    <param id="0" name="Animation">&quot;osilos_sem_bateria&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="661265327579578" type="pilha">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="875349233993994" type="System">
+                                                    <param id="0" name="Variable">4_pilha</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="641189184615777">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="922201794698204" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="465096340239381" type="meio_sala4">
+                                                    <param id="0" name="Animation">&quot;alien_vazando&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="6" name="Set speed" sid="894444044901814" type="meio_sala4">
+                                                    <param id="0" name="Speed">2</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="478668483347572" type="pilha">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action behavior="DragDrop" id="0" name="Set enabled" sid="526514105784706" type="pilha">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="938056525432374">
+                                            <conditions>
+                                                <condition id="3" name="Compare frame" sid="121217151102930" type="meio_sala4">
+                                                    <param id="0" name="Comparison">0</param>
+                                                    <param id="1" name="Number">7</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="743706298814069" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="6" name="Set speed" sid="823236500460016" type="meio_sala4">
+                                                    <param id="0" name="Speed">0</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="644748561000923" type="System">
+                                                    <param id="0" name="Seconds">0.6</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="962259734593739" type="System">
+                                                    <param id="0" name="Variable">4_alien_janela</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                                <action behavior="DragDrop" id="0" name="Set enabled" sid="556159442210165" type="pilha">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="941516716890335" type="System">
+                                                    <param id="0" name="Group name">&quot;all_4&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="262786917316177" type="System">
+                                                    <param id="0" name="Group name">&quot;cursor_4&quot;</param>
+                                                    <param id="1" name="State">1</param>
+                                                </action>
+                                                <action id="-12" name="Set group active" sid="182775637234100" type="System">
+                                                    <param id="0" name="Group name">&quot;dialogos_4&quot;</param>
+                                                    <param id="1" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-group>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="238152704959249" title="cursor_4">
+            <sub-events>
+                <event-block sid="591917661124479">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="250808621343907" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="599149669213762">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="327291266548516" type="Mouse">
+                            <param id="0" name="Object">esquerda_para_meio</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="296887411332316" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="278038807247560">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="798613560256950" type="Mouse">
+                            <param id="0" name="Object">meio_para_esq4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="716519851006835" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="780057026251564">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="773215831745421" type="Mouse">
+                            <param id="0" name="Object">pilha</param>
+                        </condition>
+                        <condition behavior="DragDrop" id="3" name="Is enabled" sid="359916689493135" type="pilha" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="786691647916473" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="958523725848740">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="118067136777926" type="Mouse">
+                            <param id="0" name="Object">chave</param>
+                        </condition>
+                        <condition behavior="DragDrop" id="3" name="Is enabled" sid="107911542564055" type="chave" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="381118230323334" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="104149038518796" title="janela_4">
+                    <sub-events>
+                        <event-block sid="558837516740772">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="344398255893180" type="Mouse">
+                                    <param id="0" name="Object">janela_alien4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="153694058716671" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="339005738557958" title="esquerda_sala_cursor_4">
+                    <sub-events>
+                        <event-block sid="616672794642330">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="336541060224984" type="Mouse">
+                                    <param id="0" name="Object">voltar_esqrd4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="140295079854063" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="202342804265790">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="490968895471799" type="Mouse">
+                                    <param id="0" name="Object">alien_medico</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="142071252746426" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="122449081514110" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="613725153124617">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="120418161509747" type="Mouse">
+                                    <param id="0" name="Object">botao_cardio</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="613156692094748" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="458286357041792">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="712179844493786" type="Mouse">
+                                    <param id="0" name="Object">eletro</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="670347444746185" type="System">
+                                    <param id="0" name="Variable">4_status_medico</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="722894327443722" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="192889468813850" title="meio_sala_cursor_4">
+                    <sub-events>
+                        <event-block sid="985232129690037">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="529112687029873" type="Mouse">
+                                    <param id="0" name="Object">ir_janela4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="244728507022333" type="System">
+                                    <param id="0" name="Variable">4_alien_janela</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="974321935813656" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="165397323335287">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="803616652459100" type="Mouse">
+                                    <param id="0" name="Object">voltar_meio4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="867465657152913" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="554807531106864">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="465652546452889" type="Mouse">
+                                    <param id="0" name="Object">porta</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="176722798717751" type="System">
+                                    <param id="0" name="Variable">4_chave</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="760986848403719" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="678285958541791" title="sair4">
+                    <sub-events>
+                        <event-block sid="832967864724428">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="815889917034100" type="Mouse">
+                                    <param id="0" name="Object">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="851394444147048" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="996185266658664">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="274904951427951" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="204194115576506" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="667394510474307" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="766188247917396">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="488862557224631" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="530551663528521" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="844908178611839" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

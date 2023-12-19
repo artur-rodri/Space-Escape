@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">meio_sala</layout>
+        <layout order="3">sub_menu</layout>
+        <layout order="4">menu</layout>
+        <event-sheet order="1">evento_sala1</event-sheet>
+        <event-sheet active="1" order="2">evento_menu</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/menu/" />
+        <folder expanded="1" path="object-folder/menu/sem_sala/" />
+        <folder expanded="0" path="object-folder/menu/agradecimento/" />
+        <folder expanded="0" path="object-folder/sala1/" />
+        <folder expanded="0" path="object-folder/sala1/paineis/" />
+        <folder expanded="0" path="object-folder/sala1/paineis/teclas/" />
+        <folder expanded="0" path="object-folder/sala1/cofre_esq/" />
+        <folder expanded="0" path="object-folder/sala1/termo_esq/" />
+        <folder expanded="1" path="object-folder/sala1/meio_sala/" />
+        <folder expanded="0" path="object-folder/sala1/esq_sala/" />
+        <folder expanded="0" path="object-folder/sala1/esq_sala/alien/" />
+        <folder expanded="0" path="object-folder/utils/" />
+        <folder expanded="0" path="object-folder/utils/voltar/" />
+        <folder expanded="0" path="object-folder/sala2/" />
+        <folder expanded="0" path="object-folder/sala2/navegacao/" />
+        <folder expanded="0" path="object-folder/sala2/alien2/" />
+        <folder expanded="0" path="object-folder/sala2/alien_bar2/" />
+        <folder expanded="0" path="object-folder/sala2/questionario/" />
+        <folder expanded="0" path="object-folder/sala2/questionario/botoes/" />
+        <folder expanded="0" path="object-folder/sala3/" />
+        <folder expanded="1" path="object-folder/sala3/navegacao/" />
+        <folder expanded="0" path="object-folder/sala3/dialogo/" />
+        <folder expanded="0" path="object-folder/sala3/janelaDireita/" />
+        <folder expanded="0" path="object-folder/sala3/janelaEsquedra/" />
+        <folder expanded="0" path="object-folder/sala3/meio_sala/" />
+        <folder expanded="0" path="object-folder/sala4/" />
+        <folder expanded="0" path="object-folder/sala4/navegacao/" />
+        <folder expanded="0" path="object-folder/sala4/janela/" />
+        <folder expanded="0" path="object-folder/sala4/esquerda_sala/" />
+        <folder expanded="0" path="object-folder/sala4/esquerda_sala/cardio/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="layout-folder/sala1/" />
+        <folder expanded="0" path="layout-folder/menu/" />
+        <folder expanded="0" path="layout-folder/sala2/" />
+        <folder expanded="0" path="layout-folder/sala3/" />
+        <folder expanded="0" path="layout-folder/sala4/" />
+        <folder expanded="0" path="layout-folder/temporario/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/semSala/" />
+        <folder expanded="1" path="animation-folder/voltar_semSala/" />
+        <folder expanded="1" path="animation-folder/voltar_menu/" />
+        <folder expanded="1" path="animation-folder/agradecimento/" />
+        <folder expanded="1" path="animation-folder/voltar_agradecimento/" />
+        <folder expanded="1" path="animation-folder/menu/" />
+        <folder expanded="1" path="animation-folder/quit/" />
+        <folder expanded="1" path="animation-folder/start/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/go_sala1/" />
+        <folder expanded="1" path="animation-folder/go_sala2/" />
+        <folder expanded="1" path="animation-folder/go_sala3/" />
+        <folder expanded="1" path="animation-folder/go_sala4/" />
+        <folder expanded="1" path="animation-folder/go_sala5/" />
+        <folder expanded="1" path="animation-folder/go_sala6/" />
+        <folder expanded="1" path="animation-folder/B2/" />
+        <folder expanded="1" path="animation-folder/B1/" />
+        <folder expanded="1" path="animation-folder/B3/" />
+        <folder expanded="1" path="animation-folder/B4/" />
+        <folder expanded="1" path="animation-folder/B5/" />
+        <folder expanded="1" path="animation-folder/B6/" />
+        <folder expanded="1" path="animation-folder/B7/" />
+        <folder expanded="1" path="animation-folder/B8/" />
+        <folder expanded="1" path="animation-folder/B9/" />
+        <folder expanded="1" path="animation-folder/B0/" />
+        <folder expanded="1" path="animation-folder/OK/" />
+        <folder expanded="1" path="animation-folder/painel_0/" />
+        <folder expanded="1" path="animation-folder/painel/" />
+        <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/tecla_2/" />
+        <folder expanded="1" path="animation-folder/tecla_9/" />
+        <folder expanded="1" path="animation-folder/mesa_cofre/" />
+        <folder expanded="1" path="animation-folder/Aber_cofre/" />
+        <folder expanded="1" path="animation-folder/aumenta/" />
+        <folder expanded="1" path="animation-folder/down/" />
+        <folder expanded="1" path="animation-folder/termo/" />
+        <folder expanded="1" path="animation-folder/quadro/" />
+        <folder expanded="1" path="animation-folder/dica/" />
+        <folder expanded="1" path="animation-folder/vaso/" />
+        <folder expanded="1" path="animation-folder/note_floor/" />
+        <folder expanded="1" path="animation-folder/nota_meio/" />
+        <folder expanded="1" path="animation-folder/aleluia/" />
+        <folder expanded="1" path="animation-folder/alien/" />
+        <folder expanded="1" path="animation-folder/cozinha/" />
+        <folder expanded="1" path="animation-folder/dialogo/" />
+        <folder expanded="1" path="animation-folder/b_receita/" />
+        <folder expanded="1" path="animation-folder/receita/" />
+        <folder expanded="1" path="animation-folder/legenda/" />
+        <folder expanded="1" path="animation-folder/pegaTecla9/" />
+        <folder expanded="1" path="animation-folder/esq_nota/" />
+        <folder expanded="1" path="animation-folder/nota_open/" />
+        <folder expanded="1" path="animation-folder/1_2/" />
+        <folder expanded="1" path="animation-folder/2_3/" />
+        <folder expanded="1" path="animation-folder/2_1/" />
+        <folder expanded="1" path="animation-folder/3_2/" />
+        <folder expanded="1" path="animation-folder/S_esq/" />
+        <folder expanded="1" path="animation-folder/S_meio_BLOK/" />
+        <folder expanded="1" path="animation-folder/S_dir/" />
+        <folder expanded="1" path="animation-folder/off/" />
+        <folder expanded="1" path="animation-folder/voltar_nao/" />
+        <folder expanded="1" path="animation-folder/voltar/" />
+        <folder expanded="1" path="animation-folder/voltar_sim/" />
+        <folder expanded="1" path="animation-folder/2_1_2/" />
+        <folder expanded="1" path="animation-folder/2_2_1/" />
+        <folder expanded="1" path="animation-folder/2_2_3/" />
+        <folder expanded="1" path="animation-folder/2_3_2/" />
+        <folder expanded="1" path="animation-folder/sala_dir2/" />
+        <folder expanded="1" path="animation-folder/sala_esq2/" />
+        <folder expanded="1" path="animation-folder/sala_meio2/" />
+        <folder expanded="1" path="animation-folder/2_saida/" />
+        <folder expanded="1" path="animation-folder/2_ambientacao/" />
+        <folder expanded="1" path="animation-folder/balde_fixo/" />
+        <folder expanded="1" path="animation-folder/alien_banheira/" />
+        <folder expanded="1" path="animation-folder/nao_tem_agua/" />
+        <folder expanded="1" path="animation-folder/bota_agua/" />
+        <folder expanded="1" path="animation-folder/btn_agua/" />
+        <folder expanded="1" path="animation-folder/remendo/" />
+        <folder expanded="1" path="animation-folder/2_remendo/" />
+        <folder expanded="1" path="animation-folder/toalha/" />
+        <folder expanded="1" path="animation-folder/toalha_movel/" />
+        <folder expanded="1" path="animation-folder/alien_bar/" />
+        <folder expanded="1" path="animation-folder/meuPano/" />
+        <folder expanded="1" path="animation-folder/balde_movel/" />
+        <folder expanded="1" path="animation-folder/questionario/" />
+        <folder expanded="1" path="animation-folder/2_chave/" />
+        <folder expanded="1" path="animation-folder/2_chave_movel/" />
+        <folder expanded="1" path="animation-folder/2_quest1/" />
+        <folder expanded="1" path="animation-folder/2_quest2/" />
+        <folder expanded="1" path="animation-folder/2_quest3/" />
+        <folder expanded="1" path="animation-folder/2_quest4/" />
+        <folder expanded="1" path="animation-folder/2_quest5/" />
+        <folder expanded="1" path="animation-folder/2_background/" />
+        <folder expanded="1" path="animation-folder/2_quest/" />
+        <folder expanded="1" path="animation-folder/sala/" />
+        <folder expanded="1" path="animation-folder/rato3/" />
+        <folder expanded="1" path="animation-folder/janela_direita/" />
+        <folder expanded="1" path="animation-folder/janela_esquerda/" />
+        <folder expanded="1" path="animation-folder/voltar_sala/" />
+        <folder expanded="1" path="animation-folder/saida/" />
+        <folder expanded="1" path="animation-folder/dialogo_3/" />
+        <folder expanded="1" path="animation-folder/lasers3/" />
+        <folder expanded="1" path="animation-folder/espelho_cima/" />
+        <folder expanded="1" path="animation-folder/espelho_baixo/" />
+        <folder expanded="1" path="animation-folder/btn_cima_orientacao/" />
+        <folder expanded="1" path="animation-folder/btn_cima_lado/" />
+        <folder expanded="1" path="animation-folder/btn_baixo_lado/" />
+        <folder expanded="1" path="animation-folder/btn_baixo_orientacao/" />
+        <folder expanded="1" path="animation-folder/sala_esquerda/" />
+        <folder expanded="1" path="animation-folder/botao1/" />
+        <folder expanded="1" path="animation-folder/botao2/" />
+        <folder expanded="1" path="animation-folder/botao3/" />
+        <folder expanded="1" path="animation-folder/botao4/" />
+        <folder expanded="1" path="animation-folder/botao5/" />
+        <folder expanded="1" path="animation-folder/troca_espelho/" />
+        <folder expanded="1" path="animation-folder/liberacao/" />
+        <folder expanded="1" path="animation-folder/meio_sala4/" />
+        <folder expanded="1" path="animation-folder/meio_para_esq4/" />
+        <folder expanded="1" path="animation-folder/esquerda_sala4/" />
+        <folder expanded="1" path="animation-folder/esquerda_para_meio/" />
+        <folder expanded="1" path="animation-folder/voltar_meio4/" />
+        <folder expanded="1" path="animation-folder/ir_janela4/" />
+        <folder expanded="1" path="animation-folder/pilha/" />
+        <folder expanded="1" path="animation-folder/chave/" />
+        <folder expanded="1" path="animation-folder/porta/" />
+        <folder expanded="1" path="animation-folder/decoracao4/" />
+        <folder expanded="1" path="animation-folder/janela_sala4/" />
+        <folder expanded="1" path="animation-folder/janela_dialogo4/" />
+        <folder expanded="1" path="animation-folder/janela_alien4/" />
+        <folder expanded="1" path="animation-folder/botao_osilos/" />
+        <folder expanded="1" path="animation-folder/voltar_esqrd4/" />
+        <folder expanded="1" path="animation-folder/botao_cardio/" />
+        <folder expanded="1" path="animation-folder/alien_medico/" />
+        <folder expanded="1" path="animation-folder/dialogo_medico/" />
+        <folder expanded="1" path="animation-folder/eletro_background/" />
+        <folder expanded="1" path="animation-folder/eletro/" />
+        <folder expanded="1" path="animation-folder/quadro4/" />
+    </folders-expanded>
+</c2uistate>

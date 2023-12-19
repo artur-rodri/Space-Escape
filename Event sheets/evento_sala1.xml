@@ -1,0 +1,2204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>evento_sala1</name>
+    <events>
+        <variable constant="0" name="open_door" sid="229134001537047" static="0" type="number">0</variable>
+        <variable constant="0" name="mult10" sid="287946265059015" static="0" type="number">100000</variable>
+        <variable constant="0" name="control" sid="725074814196817" static="0" type="number">0</variable>
+        <variable constant="0" name="codigo_final" sid="919938880854745" static="0" type="number">0</variable>
+        <variable constant="0" name="quadro" sid="759999776637503" static="0" type="number">0</variable>
+        <variable constant="0" name="vaso_caido" sid="956127650200070" static="0" type="number">0</variable>
+        <variable constant="0" name="forno" sid="555206093455187" static="0" type="number">0</variable>
+        <variable constant="0" name="cofre_status" sid="497087042799667" static="0" type="number">0</variable>
+        <variable constant="0" name="temp_esq" sid="332603467208594" static="0" type="number">12</variable>
+        <event-group description="" sid="861829004944913" title="all">
+            <sub-events>
+                <event-group description="" sid="578294218694665" title="meio_sala">
+                    <sub-events>
+                        <event-block sid="878489641741355">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="426179761657721" type="System">
+                                    <param id="0" name="Variable">vaso_caido</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="885391058203497" type="vaso">
+                                    <param id="0" name="Animation">&quot;caida&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="888862540462131">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="953673140471387" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">vaso</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="983355244636405" type="vaso">
+                                    <param id="0" name="Animation">&quot;caida&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="583268919870696" type="System">
+                                    <param id="0" name="Variable">vaso_caido</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="221574291792934">
+                            <conditions>
+                                <condition id="2" name="Is playing" sid="365034937018331" type="vaso">
+                                    <param id="0" name="Animation">&quot;caida&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="179915733767129" type="note_floor">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="139655499860536">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="145948174080721" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">note_floor</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="601165760795244" type="note_floor" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="930122124072815" type="nota_meio">
+                                    <param id="0" name="X">512.5</param>
+                                    <param id="1" name="Y">384</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="917924971400374" type="System">
+                                    <param id="0" name="Group name">&quot;notas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="567742885747930" type="System">
+                                    <param id="0" name="Group name">&quot;all&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="258188735410501" type="System">
+                                    <param id="0" name="Group name">&quot;cursor&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="749925340778228">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="643334403881759" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">quadro</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="27" name="Set enabled" sid="480956502048847" type="quadro">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="508166341936309">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="947915231580773" type="quadro">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">580</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Physics" id="27" name="Set enabled" sid="995490128464664" type="quadro">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="750325786742421" type="System">
+                                    <param id="0" name="Variable">quadro</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="714823104335610">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="783661673152421" type="System">
+                                    <param id="0" name="Variable">quadro</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="512864212075431" type="quadro">
+                                    <param id="0" name="Y">580</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="463346930846315" title="sala">
+                    <sub-events>
+                        <event-block sid="456900531078843">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="871817735943787" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="837851260723932" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="781820984369979" type="System">
+                                    <param id="0" name="Group name">&quot;dialogo&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="762195782804595" type="System">
+                                    <param id="0" name="Group name">&quot;painel&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="402428422046692" type="temperatura">
+                                    <param id="0" name="Text">temp_esq &amp; &quot;ºC&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="626764449774594">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="497965669361849" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">1_2</param>
+                                </condition>
+                                <condition id="2" inverted="1" name="Is playing" sid="988905333475306" type="cozinha">
+                                    <param id="0" name="Animation">&quot;animation&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="218919158972969" type="System">
+                                    <param id="0" name="Layout">meio_sala</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="501793163058201" type="System">
+                                    <param id="0" name="Group name">&quot;alien&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="548504199386894">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="681975177810556" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="273967339383922" type="System">
+                                    <param id="0" name="Layout">dir_sala</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="138942212483208">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="447824459478455" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">2_3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="416871488490829" type="System">
+                                    <param id="0" name="Layout">esq_sala</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="609990680070899">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="239374884868741" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">3_2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="641177787172881" type="System">
+                                    <param id="0" name="Layout">meio_sala</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="932474325758400">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="303042769311445" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">background</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="607942563565571" type="Mouse">
+                                    <param id="0" name="Object">painel_0</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="698604896965972" type="Mouse">
+                                    <param id="0" name="Object">tecla_2</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="907370479096517" type="Mouse">
+                                    <param id="0" name="Object">tecla_9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="504793989059589" type="System">
+                                    <param id="0" name="Layout">meio_sala</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="716343213755945">
+                            <conditions>
+                                <condition id="-3" name="On end of layout" sid="281678691831582" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="353698487569877" type="Mouse">
+                                    <param id="0" name="Cursor style">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="722066148783089">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="733121128423305" type="System">
+                                    <param id="0" name="Variable">open_door</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="887369977896215" type="painel_0">
+                                    <param id="0" name="Animation">&quot;certo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="311260431024351" type="S_meio_BLOK">
+                                    <param id="0" name="Animation">&quot;open&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="302144303089829">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="179861655778158" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">aleluia</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="313285051960037" type="System">
+                                    <param id="0" name="Variable">open_door</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-4" name="Is outside layout" sid="869018087389098" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="855943755240217" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="307823161196586" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="408852819806522" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Value">12</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="148996432095494" type="System">
+                                    <param id="0" name="Variable">vaso_caido</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="326068109257080" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="496968675956803" type="System">
+                                    <param id="0" name="Variable">quadro</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="177284523345925" type="System">
+                                    <param id="0" name="Variable">codigo_final</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="485312851872706" type="System">
+                                    <param id="0" name="Variable">control</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="256811554407895" type="System">
+                                    <param id="0" name="Variable">mult10</param>
+                                    <param id="1" name="Value">100000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="695572095717305" type="System">
+                                    <param id="0" name="Variable">open_door</param>
+                                    <param id="1" name="Value">100000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="179527535851802" type="System">
+                                    <param id="0" name="Variable">0_zeroGame_1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="798171183670286" title="sair">
+                    <sub-events>
+                        <event-block sid="214809664208664">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="124418981385713" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="166096685897217" type="off">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="546004361886464" type="off">
+                                    <param id="0" name="X">512</param>
+                                    <param id="1" name="Y">384.5</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="284532793122629" type="System">
+                                    <param id="0" name="Group name">&quot;painel&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="324187811607134">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="272580903492493" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="338767506030551" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="107848480148409" type="System">
+                                    <param id="0" name="Layout">sub_menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="662475791431331" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="234243177713056" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Value">12</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="200638381364994" type="System">
+                                    <param id="0" name="Variable">vaso_caido</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="732486934339803" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="864914301228772" type="System">
+                                    <param id="0" name="Variable">quadro</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="826997926164672" type="System">
+                                    <param id="0" name="Variable">codigo_final</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="476011120967519" type="System">
+                                    <param id="0" name="Variable">control</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="792929790444971" type="System">
+                                    <param id="0" name="Variable">mult10</param>
+                                    <param id="1" name="Value">100000</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="466328429368594" type="System">
+                                    <param id="0" name="Variable">open_door</param>
+                                    <param id="1" name="Value">100000</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="654598639033803">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="977836192532020" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="316390647559905" type="off">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="892696903784970" type="off">
+                                    <param id="0" name="X">485</param>
+                                    <param id="1" name="Y">863</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="836074145648275" type="System">
+                                    <param id="0" name="Group name">&quot;painel&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="625713458815425">
+                            <conditions>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="638166476922789" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="7" inverted="1" name="Cursor is over object" sid="500910722138858" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="243457347156365" type="off">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="918462611203861">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="753127490762698" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="629546361739390" type="off">
+                                    <param id="0" name="Animation">&quot;sim&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="743409087330140">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="296703839119771" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="964709242720448" type="off">
+                                    <param id="0" name="Animation">&quot;nao&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="300043958283941" title="painel">
+                    <sub-events>
+                        <event-group description="" sid="385193135477572" title="geral">
+                            <sub-events>
+                                <event-block sid="121376976924576">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="714993542715583" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">painel</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="384653203586988" type="System">
+                                            <param id="0" name="Layout">painel_codigo</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="696800696962127">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="481222341430535" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="379880778079704" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="270750914969393" type="painel_0">
+                                            <param id="0" name="Animation">&quot;painel_2&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="313096142121314" type="tecla_2" />
+                                        <action id="4" name="Set animation" sid="366369231706801" type="mesa_cofre">
+                                            <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="361392531475911">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="662858310518843" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="220695226663885" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="389933931832899" type="System">
+                                            <param id="0" name="Variable">control</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="450037795634961" type="painel_0">
+                                            <param id="0" name="Animation">&quot;painel_completo&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="698891404242041" type="tecla_2" />
+                                        <action id="-9" name="Destroy" sid="185643653102718" type="tecla_9" />
+                                        <action id="4" name="Set animation" sid="837210000104499" type="mesa_cofre">
+                                            <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="696101474863917" type="System">
+                                            <param id="0" name="Variable">control</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="832237965825125">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="916733826408568" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="989583538683368" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="954121925384820" type="painel_0">
+                                            <param id="0" name="Animation">&quot;painel_9&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Destroy" sid="724306851767207" type="tecla_9" />
+                                        <action id="4" name="Set animation" sid="982157136563976" type="cozinha">
+                                            <param id="0" name="Animation">&quot;telcaOpen&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="731618842913243">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="662449946111716" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="727052437823940" type="mesa_cofre">
+                                            <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="837021058238594" type="tecla_2">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="165650647846939">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="471304187770055" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="145243731751028" type="tecla_9">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="377290451343403" type="cozinha">
+                                            <param id="0" name="Animation">&quot;telcaOpen&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="685552098933685">
+                                    <conditions>
+                                        <condition id="3" name="On button released" sid="219045703903400" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="836176068432154" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="184312007713874" type="tecla_2">
+                                            <param id="0" name="Object">B2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="755515132896578" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="825839538514902">
+                                    <conditions>
+                                        <condition id="3" name="On button released" sid="324812756966671" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="672044416574603" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="1" name="Is overlapping another object" sid="383872160176873" type="tecla_9">
+                                            <param id="0" name="Object">B9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="112689794188298" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="990435046135368">
+                                    <conditions>
+                                        <condition id="3" name="On button released" sid="262122057350125" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="7" inverted="1" name="Cursor is over object" sid="253182735055643" type="Mouse">
+                                            <param id="0" name="Object">B2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="361459099155267" type="tecla_2">
+                                            <param id="0" name="X">158</param>
+                                            <param id="1" name="Y">681</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="651121426126493">
+                                    <conditions>
+                                        <condition id="3" name="On button released" sid="324579513366075" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                        </condition>
+                                        <condition id="7" inverted="1" name="Cursor is over object" sid="359353240421278" type="Mouse">
+                                            <param id="0" name="Object">B9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="359432092689905" type="tecla_9">
+                                            <param id="0" name="X">246</param>
+                                            <param id="1" name="Y">681</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                        <event-group description="" sid="284889993173158" title="teclas">
+                            <sub-events>
+                                <event-block sid="330229970493522">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="868916763013303" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="742765946924661" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="231911902721990" type="painel_0">
+                                            <param id="0" name="Comparison">1</param>
+                                            <param id="1" name="Number">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-group description="" sid="310144039853937" title="util">
+                                            <sub-events>
+                                                <event-block sid="821832992252545">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="428068713884815" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B2</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="767338224746684" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="568970788199162" type="System">
+                                                            <param id="0" name="Variable">codigo_final</param>
+                                                            <param id="1" name="Value">codigo_final+2*mult10</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="342142423638176" type="System">
+                                                            <param id="0" name="Variable">mult10</param>
+                                                            <param id="1" name="Value">mult10/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="148774859928979">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="743988646794306" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B3</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="957590395262223" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="327317121530358" type="System">
+                                                            <param id="0" name="Variable">codigo_final</param>
+                                                            <param id="1" name="Value">codigo_final+3*mult10</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="711476640913530" type="System">
+                                                            <param id="0" name="Variable">mult10</param>
+                                                            <param id="1" name="Value">mult10/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="236419076721949">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="375897688686882" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B4</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="808339005284181" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="576249485210436" type="System">
+                                                            <param id="0" name="Variable">codigo_final</param>
+                                                            <param id="1" name="Value">codigo_final+4*mult10</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="893165093646486" type="System">
+                                                            <param id="0" name="Variable">mult10</param>
+                                                            <param id="1" name="Value">mult10/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="627797475205742">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="148990011218257" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B5</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="552692835940157" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="807449222601241" type="System">
+                                                            <param id="0" name="Variable">codigo_final</param>
+                                                            <param id="1" name="Value">codigo_final+5*mult10</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="634986055312172" type="System">
+                                                            <param id="0" name="Variable">mult10</param>
+                                                            <param id="1" name="Value">mult10/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="184539212584204">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="965148906968944" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B7</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="269778086497781" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="673782235938688" type="System">
+                                                            <param id="0" name="Variable">codigo_final</param>
+                                                            <param id="1" name="Value">codigo_final+7*mult10</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="188911916000178" type="System">
+                                                            <param id="0" name="Variable">mult10</param>
+                                                            <param id="1" name="Value">mult10/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="153413902348044">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="215018312309925" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B9</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="125130887465418" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="268897101867782" type="System">
+                                                            <param id="0" name="Variable">codigo_final</param>
+                                                            <param id="1" name="Value">codigo_final+9*mult10</param>
+                                                        </action>
+                                                        <action id="-9" name="Set value" sid="540507643490513" type="System">
+                                                            <param id="0" name="Variable">mult10</param>
+                                                            <param id="1" name="Value">mult10/10</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-group>
+                                        <event-group description="" sid="334484736763662" title="inutil">
+                                            <sub-events>
+                                                <event-block sid="278232391444906">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="292487864395406" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B8</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="291092889083135" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="341835434626243">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="784798915208827" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B6</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="799116722895793" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="696436079477708">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="255185408352821" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B1</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="108779669744053" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                                <event-block sid="635007320745187">
+                                                    <conditions>
+                                                        <condition id="6" name="On object clicked" sid="301166251161423" type="Mouse">
+                                                            <param id="0" name="Mouse button">0</param>
+                                                            <param id="1" name="Click type">0</param>
+                                                            <param id="2" name="Object clicked">B0</param>
+                                                        </condition>
+                                                    </conditions>
+                                                    <actions>
+                                                        <action id="5" name="Set frame" sid="674683150454963" type="painel_0">
+                                                            <param id="0" name="Frame number">painel_0.AnimationFrame+1</param>
+                                                        </action>
+                                                    </actions>
+                                                </event-block>
+                                            </sub-events>
+                                        </event-group>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="378194007111831">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="315118549653091" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OK</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="690569942365727" type="painel_0">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">6</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="310119428138881" type="System">
+                                            <param id="0" name="Variable">codigo_final</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">327954</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="737819447434297" type="painel_0">
+                                            <param id="0" name="Animation">&quot;certo&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="914557599752861" type="System">
+                                            <param id="0" name="Variable">open_door</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="313872472828727" type="System">
+                                            <param id="0" name="Seconds">1.5</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="974207787860540" type="System">
+                                            <param id="0" name="Layout">meio_sala</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="407995401373643">
+                                    <conditions>
+                                        <condition id="6" name="On object clicked" sid="365534266850561" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                            <param id="2" name="Object clicked">OK</param>
+                                        </condition>
+                                        <condition id="3" name="Compare frame" sid="961822691901292" type="painel_0">
+                                            <param id="0" name="Comparison">0</param>
+                                            <param id="1" name="Number">6</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="146586364740339" type="System">
+                                            <param id="0" name="Variable">codigo_final</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">327954</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="571966411844155" type="painel_0">
+                                            <param id="0" name="Animation">&quot;errado&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="851614453917375" type="System">
+                                            <param id="0" name="Seconds">1.5</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="863596571995000" type="painel_0">
+                                            <param id="0" name="Animation">&quot;painel_completo&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="104845561562471" type="System">
+                                            <param id="0" name="Variable">codigo_final</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="979396202838072" type="System">
+                                            <param id="0" name="Variable">mult10</param>
+                                            <param id="1" name="Value">100000</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="754449118578271">
+                                    <conditions>
+                                        <condition id="-2" name="On start of layout" sid="686939941064825" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="416542788779184" type="System">
+                                            <param id="0" name="Variable">codigo_final</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="358180400130910" type="System">
+                                            <param id="0" name="Variable">mult10</param>
+                                            <param id="1" name="Value">100000</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="279574281718384">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="721050143415009" type="System">
+                                                    <param id="0" name="Variable">forno</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="618965123405534" type="System">
+                                                    <param id="0" name="Variable">cofre_status</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="359192108348139" type="System">
+                                                    <param id="0" name="Variable">open_door</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="611328710181454" type="painel_0">
+                                                    <param id="0" name="Animation">&quot;certo&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="583688465206631">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="498616828809439" type="System">
+                                                    <param id="0" name="Variable">forno</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="852706601922686" type="System">
+                                                    <param id="0" name="Variable">cofre_status</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="825646472295533" type="System">
+                                                    <param id="0" name="Variable">open_door</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="547998344956610" type="painel_0">
+                                                    <param id="0" name="Animation">&quot;painel_completo&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-group>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="624426509788187" title="termo">
+                    <sub-events>
+                        <event-block sid="163576794960522">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="800395728568816" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">aumenta</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="224859362293896" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">40</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="483712007784373" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="805373901536990" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="832137046618194" type="temperatura">
+                                    <param id="0" name="Text">temp_esq &amp; &quot;ºC&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="287824829481509" type="Aber_cofre">
+                                    <param id="0" name="Instance variable">aoc</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="503574249011126">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="522952981402493" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">down</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="404210244841871" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">-20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="117572016139710" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="919310110943700" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Value">-1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="750862849853712" type="temperatura">
+                                    <param id="0" name="Text">temp_esq &amp; &quot;ºC&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="620605644904576" type="Aber_cofre">
+                                    <param id="0" name="Instance variable">aoc</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="148417220447760" title="cofre">
+                    <sub-events>
+                        <event-block sid="490340656850641">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="232200519261401" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="978528501194081" type="mesa_cofre">
+                                    <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="854543918776883">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="922526446307762" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">esq_nota</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="913399779621212" type="nota_open">
+                                    <param id="0" name="X">520.743</param>
+                                    <param id="1" name="Y">400</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="246389107748295" type="System">
+                                    <param id="0" name="Group name">&quot;notas&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="138609705666896" type="System">
+                                    <param id="0" name="Group name">&quot;all&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="686873485923965" type="System">
+                                    <param id="0" name="Group name">&quot;cursor&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="283846684324928">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="852289563068125" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Aber_cofre</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="443417023514605" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="435156235371423" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="220619641882778" type="mesa_cofre">
+                                    <param id="0" name="Animation">&quot;aberto&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="305264781434698">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="139776114159949" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">35</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="284655242498198" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-6" name="Every X seconds" sid="932191109079418" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="920912164575495" type="Aber_cofre">
+                                    <param id="0" name="Instance variable">aoc</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="349632269449697">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="402601678002616" type="Aber_cofre">
+                                    <param id="0" name="Instance variable">aoc</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="839105797593381" type="Aber_cofre">
+                                    <param id="0" name="Instance variable">aoc</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="566592169924925" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="942447543694124" type="mesa_cofre">
+                                    <param id="0" name="Animation">&quot;liberado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="763919566914935">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="468558126262664" type="System">
+                                    <param id="0" name="Variable">temp_esq</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">13</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="384571204705634" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="288787489703118" type="mesa_cofre">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="609355015046339">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="869832323013290" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="447887375335618">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="556669424581161" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="126555384576686" type="mesa_cofre">
+                                            <param id="0" name="Animation">&quot;liberado&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="736082565394086" title="alien">
+                    <sub-events>
+                        <event-block sid="788379893341336">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="133509486162526" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">b_receita</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="302055993612133" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="911907136602702" type="receita">
+                                    <param id="0" name="X">506</param>
+                                    <param id="1" name="Y"> 412</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="426687504611855" type="receita">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="357259229319174" type="b_receita">
+                                    <param id="0" name="X">0</param>
+                                    <param id="1" name="Y">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="317475800426303">
+                            <conditions>
+                                <condition id="1" name="On any click" sid="566372358410932" type="Mouse" />
+                                <condition id="-9" name="Is visible" sid="339302275271044" type="receita" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="357995056110874" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="608690959753247" type="receita">
+                                    <param id="0" name="X">501</param>
+                                    <param id="1" name="Y">1031</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="876177106850032" type="receita">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="843647627453857" type="b_receita">
+                                    <param id="0" name="X">580.568</param>
+                                    <param id="1" name="Y">516.068</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="747043646113314">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="209043887113352" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">alien</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="284439732897341" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="876061801802952" type="legenda">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="136172369143333" type="System">
+                                    <param id="0" name="Group name">&quot;dialogo&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="657709125550344" type="legenda">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="609102677744345" type="tecla_2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="775119139420510" type="tecla_9">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="948415708098896" type="System">
+                                    <param id="0" name="Group name">&quot;cursor&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="475970556863738" type="System">
+                                    <param id="0" name="Group name">&quot;all&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="725908517218741">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="788285715794157" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="913639846875041" type="cozinha">
+                                    <param id="0" name="Animation">&quot;animation&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="271550882260021">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="246500203036429" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="217183655957262" type="cozinha">
+                                    <param id="0" name="Animation">&quot;ok&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="522698830410061">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="751252148205095" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="342022811770588" type="cozinha">
+                                    <param id="0" name="Animation">&quot;telcaOpen&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="464837140160481">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="445917363307704" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="938286382807013" type="cozinha">
+                                    <param id="0" name="Animation">&quot;telcaOpen&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="312923448593742">
+                            <conditions>
+                                <condition id="6" name="On object clicked" sid="310255802682440" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">pegaTecla9</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="703525622882652" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="675155834237285" type="cozinha">
+                                    <param id="0" name="Animation">&quot;telcaOpen&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="289032564354276" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="683171616133908">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="746201704150301" type="cozinha">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                                <condition id="0" name="Compare text" sid="924141436592152" type="resultado">
+                                    <param id="0" name="Text">&quot;394&quot;</param>
+                                    <param id="1" name="Case">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="306761708287617" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="869879964549030" type="cozinha">
+                                    <param id="0" name="Animation">&quot;ok&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="969264694389884" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="753391064171416">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="299976925829547" type="cozinha">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">3</param>
+                                </condition>
+                                <condition id="0" inverted="1" name="Compare text" sid="881363349152047" type="resultado">
+                                    <param id="0" name="Text">&quot;394&quot;</param>
+                                    <param id="1" name="Case">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="382746227513905" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="109429198163521" type="cozinha">
+                                    <param id="0" name="Animation">&quot;errado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="810579565464307" type="resultado">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="288058174014182" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="179226812332312" type="legenda">
+                                    <param id="0" name="Animation">&quot;deuErrado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="795706928569742" type="legenda">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="348475035436539" type="System">
+                                    <param id="0" name="Group name">&quot;dialogo&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="556212533072187" type="System">
+                                    <param id="0" name="Group name">&quot;all&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="457375756483511" type="System">
+                                    <param id="0" name="Group name">&quot;cursor&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="995643644686555" type="legenda">
+                                    <param id="0" name="Frame number">2</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="383094628720847" type="tecla_2">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="DragDrop" id="0" name="Set enabled" sid="579474347670732" type="tecla_9">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="258748518465215" title="dialogo">
+            <sub-events>
+                <event-block sid="989576122050565">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="388284812340994" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="781696767013320">
+                    <conditions>
+                        <condition id="-4" inverted="1" name="Is outside layout" sid="887845965061699" type="resultado" />
+                        <condition id="2" name="Key is down" sid="872973874031442" type="Keyboard">
+                            <param id="0" name="Key">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set visible" sid="335533002981752" type="resultado">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="466114981197561" type="resultado">
+                            <param id="0" name="X">1038</param>
+                            <param id="1" name="Y">510</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="188323006559766" type="System">
+                            <param id="0" name="Group name">&quot;all&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="457468405621426" type="System">
+                            <param id="0" name="Group name">&quot;cursor&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="769951296736445" type="System">
+                            <param id="0" name="Group name">&quot;dialogo&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="728117987844900" type="tecla_2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="968949812881872" type="tecla_9">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="658146246152941" type="System">
+                            <param id="0" name="Variable">forno</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="950602409623410">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="351978826694946" type="Mouse" />
+                        <condition id="-9" name="Is visible" sid="240415100605328" type="legenda" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="825790378124771" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="146351922919551" type="legenda">
+                            <param id="0" name="Frame number">legenda.AnimationFrame-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="765963448490120">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="633766018821680" type="Mouse" />
+                        <condition id="2" name="Is playing" sid="658608958978115" type="legenda">
+                            <param id="0" name="Animation">&quot;deuErrado&quot;</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="313305047796514" type="legenda">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="247918176355605" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="952097324369679" type="legenda">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="299361439802044" type="legenda">
+                            <param id="0" name="Frame number">legenda.AnimationFrame-1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="898119891496948" type="System">
+                            <param id="0" name="Group name">&quot;all&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="938825638222703" type="System">
+                            <param id="0" name="Group name">&quot;cursor&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="646418735858277" type="tecla_2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="DragDrop" id="0" name="Set enabled" sid="140575190844543" type="tecla_9">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="316067196787200" type="System">
+                            <param id="0" name="Group name">&quot;dialogo&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="264313361797779" type="System">
+                            <param id="0" name="Variable">forno</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="178410261323196">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="264574934037155" type="Mouse" />
+                        <condition id="-9" name="Is visible" sid="266265696579959" type="legenda" />
+                        <condition id="2" inverted="1" name="Is playing" sid="852915482504576" type="legenda">
+                            <param id="0" name="Animation">&quot;deuErrado&quot;</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="866924346532075" type="legenda">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set visible" sid="603157737422228" type="resultado">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="492294354034376" type="resultado">
+                            <param id="0" name="X">511</param>
+                            <param id="1" name="Y">699</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="152653969077602" type="legenda">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="177058983353266" title="notas">
+            <sub-events>
+                <event-block sid="594924499661682">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="101483419107544" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="761704087676908">
+                    <conditions>
+                        <condition id="1" name="On any click" sid="928349809105607" type="Mouse" />
+                        <condition id="2" name="Mouse button is down" sid="887168851115373" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="512012455785470" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="330740913802215" type="nota_open">
+                            <param id="0" name="X">493</param>
+                            <param id="1" name="Y">896</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="777537269493753" type="nota_meio">
+                            <param id="0" name="X">493</param>
+                            <param id="1" name="Y">896</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="503437147631089" type="System">
+                            <param id="0" name="Group name">&quot;notas&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="675388680847673" type="System">
+                            <param id="0" name="Group name">&quot;all&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="877672356064851" type="System">
+                            <param id="0" name="Group name">&quot;cursor&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="600959746224297" title="cursor">
+            <sub-events>
+                <event-block sid="907487337192949">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="616140641424400" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="250531784819102" title="sala_dir">
+                    <sub-events>
+                        <event-block sid="664421706391259">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="867619336268439" type="Mouse">
+                                    <param id="0" name="Object">alien</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="193804846095953" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="841108238616895" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="147786817658584">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="889852667379991" type="Mouse">
+                                    <param id="0" name="Object">pegaTecla9</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="124184253256991" type="System">
+                                    <param id="0" name="Variable">forno</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="150412507834369" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="239362675953893">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="854965002764380" type="Mouse">
+                                    <param id="0" name="Object">b_receita</param>
+                                </condition>
+                                <condition id="-9" inverted="1" name="Is visible" sid="593505805963883" type="receita" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="972091749938951" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="462090240273475" title="esq_sala">
+                    <sub-events>
+                        <event-block sid="718726296938288">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="903112095268069" type="Mouse">
+                                    <param id="0" name="Object">down</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="645822436069912" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="351108827894585" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="138005292284684">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="942421813873808" type="Mouse">
+                                    <param id="0" name="Object">aumenta</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="447527968504995" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="369903448137763" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="553259646177650">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="143281163231881" type="Mouse">
+                                    <param id="0" name="Object">Aber_cofre</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="391063602913637" type="System">
+                                    <param id="0" name="Variable">cofre_status</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="793206251591691" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="318098031637173">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="762483360525818" type="Mouse">
+                                    <param id="0" name="Object">esq_nota</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="696709085029377" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="981302976040276" title="meio_salaa">
+                    <sub-events>
+                        <event-block sid="994658382926479">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="539694793516497" type="Mouse">
+                                    <param id="0" name="Object">painel</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="848891835935073" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="391815268513470">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="488938138083557" type="Mouse">
+                                    <param id="0" name="Object">aleluia</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="874727882305247" type="System">
+                                    <param id="0" name="Variable">open_door</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="260183306532334" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="279780013470651">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="511893630472008" type="Mouse">
+                                    <param id="0" name="Object">quadro</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="704459973135013" type="quadro">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Y co-ordinate">315</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="490307823806165" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="655618114943000">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="687621529746553" type="Mouse">
+                                    <param id="0" name="Object">note_floor</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="557174228582139" type="note_floor" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="581909891128771" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="350809912390886">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="209329897086357" type="Mouse">
+                                    <param id="0" name="Object">vaso</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="802454521710659" type="vaso">
+                                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="963699292387260" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="248846411986798">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="699852793199189" type="Mouse">
+                                    <param id="0" name="Object">voltar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="798943956255544" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="666239259295923">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="806065232036345" type="Mouse">
+                                    <param id="0" name="Object">voltar_sim</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="550101286141366" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="323988428134883" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="467274628996793">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="212459812545139" type="Mouse">
+                                    <param id="0" name="Object">voltar_nao</param>
+                                </condition>
+                                <condition id="-3" name="Is on-screen" sid="174259974944613" type="off" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="951720902898697" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="844889188415713">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="666221343614174" type="Mouse">
+                                    <param id="0" name="Object">tecla_2</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="314431746476438" type="tecla_2" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="929110674546340" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="562051954816495">
+                            <conditions>
+                                <condition id="7" name="Cursor is over object" sid="742887357136499" type="Mouse">
+                                    <param id="0" name="Object">tecla_9</param>
+                                </condition>
+                                <condition id="-9" name="Is visible" sid="164127100564894" type="tecla_9" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set cursor style" sid="973007597287843" type="Mouse">
+                                    <param id="0" name="Cursor style">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="356898932509163">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="661738478894948" type="painel_0">
+                                    <param id="0" name="Comparison">1</param>
+                                    <param id="1" name="Number">6</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="588798574335962">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="917151079359557" type="Mouse">
+                                            <param id="0" name="Object">B0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="246277563065893" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="221087071431000">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="744931965542461" type="Mouse">
+                                            <param id="0" name="Object">B1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="595911646033694" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="618107494235989">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="631362898488043" type="Mouse">
+                                            <param id="0" name="Object">B4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="812709354407001" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="723074888914251">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="694696262296900" type="Mouse">
+                                            <param id="0" name="Object">B3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="451219815035939" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="318287750070681">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="567431639738166" type="Mouse">
+                                            <param id="0" name="Object">B5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="171164017445706" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="866729195891759">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="960619687184339" type="Mouse">
+                                            <param id="0" name="Object">B6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="542855798577499" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="281178178932504">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="537778661139794" type="Mouse">
+                                            <param id="0" name="Object">B7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="294296820802706" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="132746937705318">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="181212812448903" type="Mouse">
+                                            <param id="0" name="Object">B8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="372474365307582" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="263720018638722">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="360168209058571" type="Mouse">
+                                            <param id="0" name="Object">B2</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="206605358149584" type="System">
+                                            <param id="0" name="Variable">cofre_status</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="684135639203458" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="647216704964125">
+                                    <conditions>
+                                        <condition id="7" name="Cursor is over object" sid="198654828052037" type="Mouse">
+                                            <param id="0" name="Object">B9</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="813394397777427" type="System">
+                                            <param id="0" name="Variable">forno</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set cursor style" sid="571639962391012" type="Mouse">
+                                            <param id="0" name="Cursor style">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="474869082493810">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="821491657530796" type="Mouse">
+                            <param id="0" name="Object">OK</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="314536493054739" type="painel_0">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="784858245435393" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="788364564081195">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="560414856014073" type="Mouse">
+                            <param id="0" name="Object">1_2</param>
+                        </condition>
+                        <condition id="2" inverted="1" name="Is playing" sid="942844858809334" type="cozinha">
+                            <param id="0" name="Animation">&quot;animation&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="959100634213911" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="759304113076822">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="241279637925024" type="Mouse">
+                            <param id="0" name="Object">2_1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="242435024590770" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="919746208465106">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="589028961743520" type="Mouse">
+                            <param id="0" name="Object">2_3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="335369698336003" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="669752911834939">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="134742009107036" type="Mouse">
+                            <param id="0" name="Object">3_2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="952513863836681" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

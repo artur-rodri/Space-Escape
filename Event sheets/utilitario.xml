@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>utilitario</name>
+    <events>
+        <event-group description="" sid="963155526706570" title="geral_utilitario">
+            <sub-events>
+                <event-block sid="407850980655532">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="418310453740054" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="148343926696323" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="627244674591312">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="791497021302594" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">voltar_semSala</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="637204061073179" type="System">
+                            <param id="0" name="Layout">sub_menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="733119658003036">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="949249473251423" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">voltar_agradecimento</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="416910546634910" type="System">
+                            <param id="0" name="Layout">menu</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="468012944525622" type="System">
+                            <param id="0" name="Variable">0_zeroGame_1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="806696348493988" type="System">
+                            <param id="0" name="Variable">0_zeroGame_2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="790712549414960" type="System">
+                            <param id="0" name="Variable">0_zeroGame_3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="266763682913106" type="System">
+                            <param id="0" name="Variable">0_zeroGame_4</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="515550986822157" title="cursor_utilitario">
+            <sub-events>
+                <event-block sid="763662685899047">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="146758878924754" type="Mouse">
+                            <param id="0" name="Cursor style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="796488246728880">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="812522153163894" type="Mouse">
+                            <param id="0" name="Object">voltar_semSala</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="401680571502401" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="578565806123189">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="640980877500012" type="Mouse">
+                            <param id="0" name="Object">voltar_agradecimento</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="274810281825453" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,2359 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3jw4zah4pxz6c</unique-id>
+    <saved-with-version>26200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1024</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="menu">
+            <object-folder name="sem_sala">
+                <object-type name="semSala" sid="457973582839746">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724807892246796" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\geral\Esta sala ainda nao foi desenvolvida.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_semSala" sid="124949253256478">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="265553369119532" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala1\img\DESEJA MESMO SAIR\000 (1).png">
+                                <collision-poly>
+                                    <point x="0.295" y="0.205" />
+                                    <point x="0.3" y="0.395" />
+                                    <point x="1" y="0.395" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="0.6" />
+                                    <point x="0.3" y="0.595" />
+                                    <point x="0.3" y="0.795" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_menu" sid="626702648303501">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372717616927588" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala1\img\DESEJA MESMO SAIR\000 (1).png">
+                                <collision-poly>
+                                    <point x="0.305" y="0.195" />
+                                    <point x="0.3" y="0.405" />
+                                    <point x="1" y="0.4" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="0.595" />
+                                    <point x="0.3" y="0.6" />
+                                    <point x="0.295" y="0.795" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="agradecimento">
+                <object-type name="agradecimento" sid="945230856090094">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952485722653784" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\geral\agradeçimento.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_agradecimento" sid="611153338025174">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938761678858902" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala1\img\DESEJA MESMO SAIR\000 (1).png">
+                                <collision-poly>
+                                    <point x="0.295" y="0.205" />
+                                    <point x="0.3" y="0.4" />
+                                    <point x="1" y="0.405" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="0.605" />
+                                    <point x="0.310001" y="0.6" />
+                                    <point x="0.305" y="0.8" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="menu" sid="451663324755768">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143240982388635" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\geral\000 (1).png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="start" pingpong="0" repeatcount="1" repeatto="0" sid="970909552369094" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\geral\start.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="quit" pingpong="0" repeatcount="1" repeatto="0" sid="586869986519956" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\geral\quit.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="quit" sid="952705950248736">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="412018552033169" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="start" sid="925362039386507">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256888099572606" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite" sid="139185377471744">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="616660400260972" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\unselecteed.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="580324588734471" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\1.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation3" pingpong="0" repeatcount="1" repeatto="0" sid="643498856144115" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\2.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation4" pingpong="0" repeatcount="1" repeatto="0" sid="838953103576722" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\3.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation5" pingpong="0" repeatcount="1" repeatto="0" sid="829894668026465" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\4.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation6" pingpong="0" repeatcount="1" repeatto="0" sid="495801034819759" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\5.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation7" pingpong="0" repeatcount="1" repeatto="0" sid="753302401629684" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\fases\6.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="go_sala1" sid="587392015025610">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874178951033766" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="go_sala2" sid="353721646465036">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="665225252811574" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="go_sala3" sid="404410807267982">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="727247080012304" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="go_sala4" sid="163762631304818">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171895969021093" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="go_sala5" sid="372270382949995">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="218479922760310" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="go_sala6" sid="555554012957137">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472193215791403" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="sala1">
+            <object-folder name="paineis">
+                <object-folder name="teclas">
+                    <object-type name="B2" sid="546536803065672">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498437760087021" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B1" sid="124224267696652">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100690323640418" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B3" sid="823125047321219">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="295364649402504" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B4" sid="672629605929849">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769458725175536" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B5" sid="615815751570385">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="119388777905017" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B6" sid="192280395440238">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="333049057817182" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B7" sid="775061461780598">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="399163886047100" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B8" sid="602470622586560">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146918336947337" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B9" sid="482820176552858">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372465772748457" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="B0" sid="693817362012206">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="894837673764699" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="OK" sid="380709897219673">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456099351088720" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="painel_0" sid="181271794165640">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="counts" sid="280973832347964" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483704228509167" speed="5">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\29.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.498127" y="0.0268595" />
+                                    <point x="0.876405" y="0.0681818" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.498127" y="0.975207" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="painel_2" pingpong="0" repeatcount="1" repeatto="0" sid="587951215652486" speed="5">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\9.png">
+                                <collision-poly>
+                                    <point x="0.027027" y="0.0206186" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.494845" />
+                                    <point x="0.972973" y="0.979381" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.494845" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="painel_9" pingpong="0" repeatcount="1" repeatto="0" sid="489488948361335" speed="5">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\2.png">
+                                <collision-poly>
+                                    <point x="0.027027" y="0.0206186" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.494845" />
+                                    <point x="0.972973" y="0.979381" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.494845" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="7" loop="0" name="painel_completo" pingpong="0" repeatcount="1" repeatto="0" sid="534170947428183" speed="0">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel.png">
+                                <collision-poly>
+                                    <point x="0.027027" y="0.0206186" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.494845" />
+                                    <point x="0.972973" y="0.979381" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.494845" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel_1.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel_2.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel_3.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel_4.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel_5.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel_6.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="certo" pingpong="0" repeatcount="1" repeatto="0" sid="453750898838750" speed="5">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel verde.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="327804944326071" speed="5">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel vermelho.png">
+                                <collision-poly>
+                                    <point x="0.149813" y="0.0826446" />
+                                    <point x="0.850187" y="0.0826446" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.906367" y="0.948347" />
+                                    <point x="0.093633" y="0.948347" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="painel" sid="952021087334980">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="953381529444586" speed="5">
+                            <frame duration="1" hotspotX="0.501873" hotspotY="0.504132" original-source="D:\faculdade\TCC\img\sala 1\painel novo\painel fechado.png">
+                                <collision-poly>
+                                    <point x="0.0945946" y="0.0630631" />
+                                    <point x="0.5" y="0.027027" />
+                                    <point x="0.905405" y="0.0630631" />
+                                    <point x="1" y="0.495495" />
+                                    <point x="0.905405" y="0.936937" />
+                                    <point x="0.5" y="0.972973" />
+                                    <point x="0.0945946" y="0.936937" />
+                                    <point x="0" y="0.495495" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="background" sid="138144613541300">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="891113730153862" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\photo_4925068354880908291_y.jpg" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="tecla_2" sid="577095231378651">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="976562353936630">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="683270008366879" speed="5">
+                            <frame duration="1" hotspotX="0.508772" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\painel\2.png">
+                                <collision-poly>
+                                    <point x="0.0526316" y="0.0517241" />
+                                    <point x="0.491228" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.5" />
+                                    <point x="0.947368" y="0.948276" />
+                                    <point x="0.491228" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="tecla_9" sid="734752208217973">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="765895625416065">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697395612214615" speed="5">
+                            <frame duration="1" hotspotX="0.508772" hotspotY="0.508772" original-source="D:\faculdade\TCC\img\sala 1\painel\9.png">
+                                <collision-poly>
+                                    <point x="0.0526316" y="0.0526316" />
+                                    <point x="0.491228" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.491228" />
+                                    <point x="0.947368" y="0.947368" />
+                                    <point x="0.491228" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.491228" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="cofre_esq">
+                <object-type name="mesa_cofre" sid="316770614821216">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577701173190193" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502513" original-source="D:\faculdade\TCC\img\sala 1\cofre\cofreFechadoVermelho.png">
+                                <collision-poly>
+                                    <point x="0.134921" y="0.256281" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.865079" y="0.256281" />
+                                    <point x="0.970899" y="0.497487" />
+                                    <point x="0.970899" y="0.944724" />
+                                    <point x="0.5" y="0.361809" />
+                                    <point x="0.0291005" y="0.944724" />
+                                    <point x="0.0291005" y="0.497487" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberado" pingpong="0" repeatcount="1" repeatto="0" sid="392349391239179" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502513" original-source="D:\faculdade\TCC\img\sala 1\cofre\cofreFechadoVerde.png">
+                                <collision-poly>
+                                    <point x="0.134921" y="0.256281" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.865079" y="0.256281" />
+                                    <point x="0.970899" y="0.497487" />
+                                    <point x="0.970899" y="0.944724" />
+                                    <point x="0.5" y="0.361809" />
+                                    <point x="0.0291005" y="0.944724" />
+                                    <point x="0.0291005" y="0.497487" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="801341049540024" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502513" original-source="D:\faculdade\TCC\img\sala 1\cofre\cofreAberto.png">
+                                <collision-poly>
+                                    <point x="0.134921" y="0.256281" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.865079" y="0.256281" />
+                                    <point x="0.970899" y="0.497487" />
+                                    <point x="0.970899" y="0.944724" />
+                                    <point x="0.5" y="0.361809" />
+                                    <point x="0.0291005" y="0.944724" />
+                                    <point x="0.0291005" y="0.497487" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Aber_cofre" sid="124870462164729">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="aoc" sid="148410570958573" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="140449686807450" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="termo_esq">
+                <object-type name="aumenta" sid="475089043182803">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="770223738706830" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="down" sid="197120333699935">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543974768119356" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="termo" sid="793946767122813">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="648854898693768" speed="5">
+                            <frame duration="1" hotspotX="0.505618" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\sala 1\termostato\termostato.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="temperatura" sid="553381061956998">
+                    <plugin id="Text" />
+                </object-type>
+            </object-folder>
+            <object-folder name="meio_sala">
+                <object-type name="quadro" sid="890721140468358">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Physics" sid="470315060677307">
+                            <behavior id="Physics" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="510274668271848" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="D:\faculdade\TCC\img\note\indicações\quadro alien.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="dica" sid="215501522361042">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="270365467346891" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="D:\faculdade\TCC\img\note\indicações\indicações senha.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="vaso" sid="533289379570932">
+                    <plugin id="Sprite" />
+                    <instance-variables>
+                        <instance-variable name="caida_ou_nao" sid="997386262395510" type="number" />
+                    </instance-variables>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721157208460788" speed="5">
+                            <frame duration="1" hotspotX="0.502564" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\note\planta\planta reta.png">
+                                <collision-poly>
+                                    <point x="0.435897" y="0.265625" />
+                                    <point x="0.425641" y="0.13125" />
+                                    <point x="0.866667" y="0.13125" />
+                                    <point x="0.717949" y="0.959375" />
+                                    <point x="0.446154" y="0.953125" />
+                                    <point x="0.384615" y="0.6125" />
+                                    <point x="0.497436" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="caida" pingpong="0" repeatcount="1" repeatto="0" sid="139478724722691" speed="5">
+                            <frame duration="1" hotspotX="0.502564" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\note\planta\planta torta.png">
+                                <collision-poly>
+                                    <point x="0.282051" y="0.171875" />
+                                    <point x="0.497436" y="0.11875" />
+                                    <point x="0.517949" y="0.29375" />
+                                    <point x="0.528205" y="0.5" />
+                                    <point x="0.666667" y="0.796875" />
+                                    <point x="0.497436" y="0.978125" />
+                                    <point x="0.312821" y="0.809375" />
+                                    <point x="0.271795" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="note_floor" sid="307115619188392">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="284309383581910" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.538462" original-source="D:\faculdade\TCC\img\sala 1\note\floor.png">
+                                <collision-poly>
+                                    <point x="0.153846" y="0.307692" />
+                                    <point x="0.5" y="0.0769231" />
+                                    <point x="0.923077" y="0.153846" />
+                                    <point x="0.884615" y="0.461538" />
+                                    <point x="0.807692" y="0.615385" />
+                                    <point x="0.5" y="0.923077" />
+                                    <point x="0.153846" y="0.692308" />
+                                    <point x="0" y="0.461538" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="nota_meio" sid="891139770412634">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706558601516516" speed="5">
+                            <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\note\sala direita.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="aleluia" sid="441416310563954">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="990119747866975" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="esq_sala">
+                <object-folder name="alien">
+                    <object-type name="alien" sid="305227429445849">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869723262676398" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                    <collision-poly>
+                                        <point x="0" y="0" />
+                                        <point x="1" y="0" />
+                                        <point x="0.984252" y="0.988189" />
+                                        <point x="0" y="1" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="cozinha" sid="506521363211193">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="0" repeatto="0" sid="157229723599797" speed="0">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_1.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.78592" y="0.370647" />
+                                        <point x="0.895115" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="4" loop="0" name="animation" pingpong="0" repeatcount="0" repeatto="0" sid="516310676588087" speed="2">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_2.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.635057" y="0.631841" />
+                                        <point x="0.298851" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_3.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.635057" y="0.631841" />
+                                        <point x="0.298851" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_4.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.635057" y="0.631841" />
+                                        <point x="0.298851" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="10" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_5.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.635057" y="0.631841" />
+                                        <point x="0.298851" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="1" loop="0" name="ok" pingpong="0" repeatcount="0" repeatto="0" sid="376460728351272" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_6.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.78592" y="0.370647" />
+                                        <point x="0.895115" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="997830202930858" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_bolado.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.78592" y="0.370647" />
+                                        <point x="0.895115" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                            <animation framecount="1" loop="0" name="telcaOpen" pingpong="0" repeatcount="1" repeatto="0" sid="367300250168689" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\alienfogaoo_6.png">
+                                    <collision-poly>
+                                        <point x="0.178161" y="0.308458" />
+                                        <point x="0.5" y="0.631841" />
+                                        <point x="0.78592" y="0.370647" />
+                                        <point x="0.895115" y="0.5" />
+                                        <point x="0.979885" y="0.965174" />
+                                        <point x="0.5" y="0.68408" />
+                                        <point x="0.00574713" y="0.99005" />
+                                        <point x="0.0201149" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="dialogo" sid="812329204469173">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980627413817735" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="resultado" sid="220088380523265">
+                        <plugin id="TextBox" />
+                    </object-type>
+                    <object-type name="b_receita" sid="559818518416363">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852207531792991" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="receita" sid="338064161468970">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="730179051183633" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.500428" original-source="D:\faculdade\TCC\sala1\img\sala 1\receita_fix.png">
+                                    <collision-poly>
+                                        <point x="0.0358744" y="0.0273738" />
+                                        <point x="0.91704" y="0.063302" />
+                                        <point x="1" y="0.499572" />
+                                        <point x="1" y="1" />
+                                        <point x="0" y="1" />
+                                        <point x="0" y="0.499572" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="legenda" sid="242807123912392">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="219007162921234" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\note\poderiameajduar.png">
+                                    <collision-poly>
+                                        <point x="0.5" y="0.469388" />
+                                        <point x="0.655273" y="0.489796" />
+                                        <point x="0.5" y="0.714286" />
+                                        <point x="0.34668" y="0.489796" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\note\sóKelvin.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\note\Olá terráqueo!.png" />
+                            </animation>
+                            <animation framecount="3" loop="0" name="deuErrado" pingpong="0" repeatcount="1" repeatto="0" sid="890506280032375" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\deu errado\me de licença.png">
+                                    <collision-poly>
+                                        <point x="0.5" y="0.367347" />
+                                        <point x="0.854492" y="0.489796" />
+                                        <point x="0.5" y="0.714286" />
+                                        <point x="0.141602" y="0.489796" />
+                                    </collision-poly>
+                                </frame>
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\deu errado\sumiu a torta.png" />
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\img\sala 1\alienFogaoAnimation\deu errado\instruçoes erradas.png">
+                                    <collision-poly>
+                                        <point x="0.5" y="0.612245" />
+                                        <point x="0.884766" y="0.489796" />
+                                        <point x="0.5" y="0.632653" />
+                                        <point x="0.0996094" y="0.489796" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="pegaTecla9" sid="859181585347189">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275337345275903" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="esq_nota" sid="377868578858370">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="917646177767057" speed="5">
+                            <frame duration="1" hotspotX="0.555556" hotspotY="0.52" original-source="D:\faculdade\TCC\img\note\wall.png">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="0.666667" y="0.12" />
+                                    <point x="0.777778" y="0.48" />
+                                    <point x="1" y="1" />
+                                    <point x="0.444444" y="1" />
+                                    <point x="0.111111" y="0.96" />
+                                    <point x="0" y="0.48" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="nota_open" sid="416621566807883">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567806681539461" speed="5">
+                            <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="D:\faculdade\TCC\img\note\sala esquerda.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-type name="1_2" sid="833791068963637">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="361553101490464" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2_3" sid="867818754982025">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="270010004501286" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2_1" sid="453192538869098">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830119861804173" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="3_2" sid="620210440711657">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293708881530968" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="S_esq" sid="109869556685789">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143871103193793" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\back\sala_1_frozen\left.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="S_meio_BLOK" sid="259966917818934">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647430503492859" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\back\sala_1_frozen\meio.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="open" pingpong="0" repeatcount="1" repeatto="0" sid="872984472291337" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\back\sala_1_frozen\meio_open.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="S_dir" sid="658038770513247">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589725449208753" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\img\back\sala_1_frozen\right.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="utils">
+            <object-folder name="voltar">
+                <object-type name="off" sid="710327350381897">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="818742290736389" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="D:\faculdade\TCC\img\DESEJA MESMO SAIR\off.png">
+                                <collision-poly>
+                                    <point x="0.0164835" y="0.035503" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.983516" y="0.035503" />
+                                    <point x="1" y="0.497041" />
+                                    <point x="0.983516" y="0.964497" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.0164835" y="0.964497" />
+                                    <point x="0" y="0.497041" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="nao" pingpong="0" repeatcount="1" repeatto="0" sid="687281947029539" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="D:\faculdade\TCC\img\DESEJA MESMO SAIR\nao.png">
+                                <collision-poly>
+                                    <point x="0.0164835" y="0.035503" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.983516" y="0.035503" />
+                                    <point x="1" y="0.497041" />
+                                    <point x="0.983516" y="0.964497" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.0164835" y="0.964497" />
+                                    <point x="0" y="0.497041" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="sim" pingpong="0" repeatcount="1" repeatto="0" sid="326482513751294" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="D:\faculdade\TCC\img\DESEJA MESMO SAIR\sim.png">
+                                <collision-poly>
+                                    <point x="0.0164835" y="0.035503" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.983516" y="0.035503" />
+                                    <point x="1" y="0.497041" />
+                                    <point x="0.983516" y="0.964497" />
+                                    <point x="0.5" y="1" />
+                                    <point x="0.0164835" y="0.964497" />
+                                    <point x="0" y="0.497041" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_nao" sid="465216104237424">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="194832197204358" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar" sid="397950315930803">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="364966534458644" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\meira\Downloads\000.png">
+                                <collision-poly>
+                                    <point x="0.00495049" y="0.5" />
+                                    <point x="0.292079" y="0.0245901" />
+                                    <point x="0.29703" y="0.352459" />
+                                    <point x="0.995049" y="0.352459" />
+                                    <point x="0.995049" y="0.5" />
+                                    <point x="1" y="0.655737" />
+                                    <point x="0.29703" y="0.655737" />
+                                    <point x="0.292079" y="0.97541" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_sim" sid="532891544704417">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754565727226260" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="sala2">
+            <object-folder name="navegacao">
+                <object-type name="2_1_2" sid="738724339831239">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="267893272618996" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                                <collision-poly>
+                                    <point x="0" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="0.768" y="0.892" />
+                                    <point x="0" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_2_1" sid="590027353922014">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="619981659515426" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_2_3" sid="514963433650644">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802208125221739" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_3_2" sid="646604962346018">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636152166060860" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="sala_dir2" sid="717864415711261">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="738418984460399" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\porta fechada.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="aberta" pingpong="0" repeatcount="1" repeatto="0" sid="237736875668510" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\porta aberta.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="sala_esq2" sid="752149430625950">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="993143640283069" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\agua5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\agua4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\agua3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\agua2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\agua1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\alien_banheira_apertado.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\meira\Downloads\alien_banheira.png" />
+                        </animation>
+                        <animation framecount="8" loop="0" name="testando_banheira" pingpong="0" repeatcount="1" repeatto="0" sid="977607516849897" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\7.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\6.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\0.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="certo" pingpong="0" repeatcount="1" repeatto="0" sid="787144959962606" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\bilyNaBanheira.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="104252868314196" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\8.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="certo_2" pingpong="0" repeatcount="1" repeatto="0" sid="607352944451926" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\pegaToalha.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="sala_meio2" sid="650456251055532">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883479881385384" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien bar\bilu.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="agua" pingpong="0" repeatcount="1" repeatto="0" sid="774753837704461" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien bar\biluEnchendoAgua.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="toalha" pingpong="0" repeatcount="1" repeatto="0" sid="736839306916722" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien bar\biluComToalha.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="chave" pingpong="0" repeatcount="1" repeatto="0" sid="155052532974907" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien bar\chave.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_saida" sid="773520199607871">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180583695516878" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_ambientacao" sid="509205379598633">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="514978696944070" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\ambiencia.png">
+                                <collision-poly>
+                                    <point x="0.299805" y="0.39974" />
+                                    <point x="0.982422" y="0.5" />
+                                    <point x="0.729492" y="0.639323" />
+                                    <point x="0.264648" y="0.647135" />
+                                    <point x="0.191406" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="alien2">
+                <object-type name="balde_fixo" sid="450725159266158">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="918731721097914" speed="5">
+                            <frame duration="1" hotspotX="0.503401" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\balde com sombra.png">
+                                <collision-poly>
+                                    <point x="0.285714" y="0.344262" />
+                                    <point x="0.496599" y="0.00819672" />
+                                    <point x="0.959184" y="0.0491803" />
+                                    <point x="0.938776" y="0.5" />
+                                    <point x="0.897959" y="0.877049" />
+                                    <point x="0.496599" y="0.983607" />
+                                    <point x="0.346939" y="0.581967" />
+                                    <point x="0.340136" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="alien_banheira" sid="959141722524128">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="504136926212219" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="nao_tem_agua" sid="223099890443984">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883425394944556" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\sala 2\alien banheira\dialogo1\nTemAgua.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.367347" />
+                                    <point x="0.84082" y="0.489796" />
+                                    <point x="0.5" y="0.714286" />
+                                    <point x="0.105469" y="0.489796" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="questao" pingpong="0" repeatcount="1" repeatto="0" sid="733938879922182" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala 2\alien banheira\dialogo1\quantidadeDeAgua.png">
+                                <collision-poly>
+                                    <point x="0.0527344" y="0.524272" />
+                                    <point x="0.5" y="0.184466" />
+                                    <point x="0.950195" y="0.495146" />
+                                    <point x="0.950195" y="0.495146" />
+                                    <point x="0.950195" y="0.504854" />
+                                    <point x="0.5" y="0.669903" />
+                                    <point x="0.225586" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="438262395854865" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala 2\alien banheira\dialogo1\TEMPERATURArUIM.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="bota_agua" sid="986161454296899">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672789048133403" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="btn_agua" sid="254279436719554">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="921797887089174" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="resultadoi" sid="507625871226974">
+                    <plugin id="TextBox" />
+                    <instance-variables>
+                        <instance-variable name="text2" sid="254914567033481" type="number" />
+                    </instance-variables>
+                </object-type>
+                <object-type name="remendo" sid="473528082215278">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601429421724544" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\bandeid.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_remendo" sid="328389736723375">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538277527753014" speed="5">
+                            <frame duration="1" hotspotX="0.511111" hotspotY="0.526316" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\25º.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="toalha" sid="208265609556339">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="408049417527369" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="toalha_movel" sid="745250744203125">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="946824598735407">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483941514881956" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\doid\toalha.png">
+                                <collision-poly>
+                                    <point x="0.212963" y="0.205357" />
+                                    <point x="0.5" y="0.0892857" />
+                                    <point x="0.824074" y="0.169643" />
+                                    <point x="0.824074" y="0.830357" />
+                                    <point x="0.5" y="0.919643" />
+                                    <point x="0.111111" y="0.892857" />
+                                    <point x="0.25" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="alien_bar2">
+                <object-type name="alien_bar" sid="249010885597280">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="257755625692194" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="meuPano" sid="873056499205015">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647745896573239" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\sala 2\alien bar\dialogo\pegaramMeuPano.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.244898" />
+                                    <point x="0.893555" y="0.489796" />
+                                    <point x="0.5" y="0.673469" />
+                                    <point x="0.0908203" y="0.489796" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="agua" pingpong="0" repeatcount="1" repeatto="0" sid="279108978421858" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.510204" original-source="D:\faculdade\TCC\sala 2\alien bar\dialogo\AguaDaCasa.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.367347" />
+                                    <point x="0.696289" y="0.489796" />
+                                    <point x="0.5" y="0.714286" />
+                                    <point x="0.301758" y="0.489796" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="988994082267140" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\quest\dialogo\desculpe.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="certo" pingpong="0" repeatcount="1" repeatto="0" sid="792423740120763" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala 2\quest\dialogo\aquiEsta.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="balde_movel" sid="697818274188485">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="606385986229901">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147750290705515" speed="5">
+                            <frame duration="1" hotspotX="0.504673" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\balde sem sombra.png">
+                                <collision-poly>
+                                    <point x="0.046729" y="0.0409836" />
+                                    <point x="0.495327" y="0" />
+                                    <point x="0.943925" y="0.0491803" />
+                                    <point x="0.915888" y="0.5" />
+                                    <point x="0.859813" y="0.877049" />
+                                    <point x="0.495327" y="1" />
+                                    <point x="0.149533" y="0.868852" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="agua" pingpong="0" repeatcount="1" repeatto="0" sid="465680052282962" speed="5">
+                            <frame duration="1" hotspotX="0.504673" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien banheira\balde com agua.png">
+                                <collision-poly>
+                                    <point x="0.046729" y="0.0409836" />
+                                    <point x="0.495327" y="0" />
+                                    <point x="0.943925" y="0.0491803" />
+                                    <point x="0.915888" y="0.5" />
+                                    <point x="0.859813" y="0.877049" />
+                                    <point x="0.495327" y="1" />
+                                    <point x="0.149533" y="0.868852" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="questionario" sid="249931402761300">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="619734130812167" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_chave" sid="544605030386845">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="239327857835340" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_chave_movel" sid="389448579704694">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="477305624798585">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="435015203305966" speed="5">
+                            <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\cheva.png">
+                                <collision-poly>
+                                    <point x="0.163636" y="0.102273" />
+                                    <point x="0.490909" y="0.0681818" />
+                                    <point x="0.836364" y="0.102273" />
+                                    <point x="0.618182" y="0.5" />
+                                    <point x="0.6" y="0.75" />
+                                    <point x="0.490909" y="0.909091" />
+                                    <point x="0.381818" y="0.761364" />
+                                    <point x="0.381818" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="questionario">
+                <object-folder name="botoes">
+                    <object-type name="2_quest1" sid="677175157235442">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924773242496415" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="2_quest2" sid="602913910776618">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="900595495591805" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="2_quest3" sid="726099421368534">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="755908569205535" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="2_quest4" sid="821387611793201">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="592384363745111" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="2_quest5" sid="174199267370168">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100803855399047" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="2_background" sid="851672452833992">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166154629397612" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\alien bar\biluComToalha.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="2_quest" sid="331106223904851">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="586017927879379" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\quest\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\quest\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala 2\quest\3.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="sala3">
+            <object-folder name="navegacao">
+                <object-type name="sala" sid="200879763857367">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="198400184844984" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\layout\back.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="rato_on" pingpong="0" repeatcount="1" repeatto="0" sid="459557202373634" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\layout\backRato.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="135969889575307" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\layout\backAberto.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="rato3" sid="758547320636711">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719435207145698" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="janela_direita" sid="385327662562536">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="350774109819946" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="janela_esquerda" sid="410135382649518">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="735092493937558" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_sala" sid="574162756951608">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287935230586601" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala1\img\DESEJA MESMO SAIR\000 (1).png">
+                                <collision-poly>
+                                    <point x="0.29" y="0.205" />
+                                    <point x="0.305" y="0.41" />
+                                    <point x="0.995" y="0.4" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="0.605" />
+                                    <point x="0.31" y="0.605" />
+                                    <point x="0.29" y="0.795" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="saida" sid="116090926516194">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="217375515505916" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="dialogo">
+                <object-type name="dialogo_3" sid="122103020498918">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="dialogo_1" pingpong="0" repeatcount="1" repeatto="0" sid="108591603891965" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.514563" original-source="D:\faculdade\TCC\sala3\dialogos\Esup.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.244898" />
+                                    <point x="0.893555" y="0.489796" />
+                                    <point x="0.5" y="0.673469" />
+                                    <point x="0.0908203" y="0.489796" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="dialogo_2" pingpong="0" repeatcount="1" repeatto="0" sid="864803122838635" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala3\dialogos\S.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.252427" />
+                                    <point x="0.556641" y="0.495146" />
+                                    <point x="0.5" y="0.669903" />
+                                    <point x="0.445313" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="dialogo_3" pingpong="0" repeatcount="1" repeatto="0" sid="786038462159050" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala3\dialogos\C.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.184466" />
+                                    <point x="0.557617" y="0.495146" />
+                                    <point x="0.5" y="0.669903" />
+                                    <point x="0.445313" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="dialogo_4" pingpong="0" repeatcount="1" repeatto="0" sid="506539067790646" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala3\dialogos\A.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.252427" />
+                                    <point x="0.552734" y="0.495146" />
+                                    <point x="0.5" y="0.669903" />
+                                    <point x="0.445313" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="dialogo_5" pingpong="0" repeatcount="1" repeatto="0" sid="313870717319580" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala3\dialogos\P.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.514563" />
+                                    <point x="0.557617" y="0.495146" />
+                                    <point x="0.5" y="0.669903" />
+                                    <point x="0.445313" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="dialogo_6" pingpong="0" repeatcount="1" repeatto="0" sid="277530359942217" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala3\dialogos\Einf.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.281553" />
+                                    <point x="0.542969" y="0.495146" />
+                                    <point x="0.5" y="0.339806" />
+                                    <point x="0.371094" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="janelaDireita">
+                <object-type name="lasers3" sid="763516619935526">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="l10" pingpong="0" repeatcount="1" repeatto="0" sid="744604482795181" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\E_cima.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l11_10" pingpong="0" repeatcount="1" repeatto="0" sid="371052424864229" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\10_10.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l11_11" pingpong="0" repeatcount="1" repeatto="0" sid="704626550181240" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\11_11.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l11_20_21" pingpong="0" repeatcount="1" repeatto="0" sid="914558661240443" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\11_20_21.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l20" pingpong="0" repeatcount="1" repeatto="0" sid="815560289322136" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\20.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l21_11_10" pingpong="0" repeatcount="1" repeatto="0" sid="969886401611300" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\21_11_10.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l21_20" pingpong="0" repeatcount="1" repeatto="0" sid="493111492391250" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\21_20.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l21_21" pingpong="0" repeatcount="1" repeatto="0" sid="381505446327702" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\laser\21_21.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="espelho_cima" sid="654434396067853">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="l10" pingpong="0" repeatcount="1" repeatto="0" sid="714779464155528" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\cima_esquerda\esquerda_cima_esquerda.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l11" pingpong="0" repeatcount="1" repeatto="0" sid="372914936559367" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\cima_esquerda\esquerda_baixo_esquerda.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l20" pingpong="0" repeatcount="1" repeatto="0" sid="106880227811045" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\cima_direita\esquerda_cima.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l21" pingpong="0" repeatcount="1" repeatto="0" sid="767915367325610" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\cima_direita\esquerda_baixo.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="espelho_baixo" sid="279148959468355">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="l10" pingpong="0" repeatcount="1" repeatto="0" sid="353561270778032" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\baixo_esquerda\esquerda_cima.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l11" pingpong="0" repeatcount="1" repeatto="0" sid="687231944791380" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\baixo_esquerda\esquerda_direita.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l20" pingpong="0" repeatcount="1" repeatto="0" sid="540138503135872" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\baixo_direita\esquerda_cima.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="l21" pingpong="0" repeatcount="1" repeatto="0" sid="124013718555372" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_direita\espelhos\baixo_direita\direita_cima.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="btn_cima_orientacao" sid="611872502892560">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121736966652445" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="btn_cima_lado" sid="399250180991818">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="702007489395354" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="btn_baixo_lado" sid="649749436195684">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="262441747140454" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="btn_baixo_orientacao" sid="363887470919607">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="949680859676196" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="janelaEsquedra">
+                <object-type name="sala_esquerda" sid="563804557932063">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="concavo_1" pingpong="0" repeatcount="1" repeatto="0" sid="425935646265085" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\concavo\antesC.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="concavo_2" pingpong="0" repeatcount="1" repeatto="0" sid="364869651692047" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\concavo\C.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="concavo_3" pingpong="0" repeatcount="1" repeatto="0" sid="917207434511843" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\concavo\CV.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="concavo_4" pingpong="0" repeatcount="1" repeatto="0" sid="802654084699837" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\concavo\F.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="concavo_5" pingpong="0" repeatcount="1" repeatto="0" sid="145482904105659" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\concavo\FV.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="convexo_1" pingpong="0" repeatcount="1" repeatto="0" sid="378579437549303" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\convexo\antesC.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="convexo_2" pingpong="0" repeatcount="1" repeatto="0" sid="898638565795461" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\convexo\C.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="convexo_3" pingpong="0" repeatcount="1" repeatto="0" sid="793323603899001" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\convexo\CF.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="convexo_4" pingpong="0" repeatcount="1" repeatto="0" sid="381644379426881" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\convexo\F.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="convexo_5" pingpong="0" repeatcount="1" repeatto="0" sid="408572778815589" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\convexo\FV.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="botao1" sid="114160839977147">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="329355151779776" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="botao2" sid="279498265692182">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690196057742748" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="botao3" sid="960014821898032">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="639308863168889" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="botao4" sid="432352209635478">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="500244462456408" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="botao5" sid="802686917505389">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="117292691888124" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="troca_espelho" sid="489234232876224">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="408333534631334" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="meio_sala">
+                <object-type name="liberacao" sid="672675574249411">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="liberacao_1" pingpong="0" repeatcount="1" repeatto="0" sid="920270239056481" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\0.png">
+                                <collision-poly>
+                                    <point x="0.365234" y="0.56901" />
+                                    <point x="0.384766" y="0.533854" />
+                                    <point x="0.362305" y="0.507813" />
+                                    <point x="0.34082" y="0.53776" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberacao_2" pingpong="0" repeatcount="1" repeatto="0" sid="404856008934637" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\1.png">
+                                <collision-poly>
+                                    <point x="0.361328" y="0.567708" />
+                                    <point x="0.385742" y="0.535157" />
+                                    <point x="0.360352" y="0.506511" />
+                                    <point x="0.34082" y="0.536458" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberacao_3" pingpong="0" repeatcount="1" repeatto="0" sid="809782793150003" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\2.png">
+                                <collision-poly>
+                                    <point x="0.34082" y="0.536459" />
+                                    <point x="0.362305" y="0.56901" />
+                                    <point x="0.384766" y="0.536458" />
+                                    <point x="0.362305" y="0.505209" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberacao_4" pingpong="0" repeatcount="1" repeatto="0" sid="686608091732792" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\3.png">
+                                <collision-poly>
+                                    <point x="0.385742" y="0.535156" />
+                                    <point x="0.362305" y="0.567708" />
+                                    <point x="0.338867" y="0.536458" />
+                                    <point x="0.361328" y="0.507813" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberacao_5" pingpong="0" repeatcount="1" repeatto="0" sid="896708249776555" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\4.png">
+                                <collision-poly>
+                                    <point x="0.361328" y="0.50651" />
+                                    <point x="0.384766" y="0.535156" />
+                                    <point x="0.363281" y="0.565104" />
+                                    <point x="0.339844" y="0.53776" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberacao_6" pingpong="0" repeatcount="1" repeatto="0" sid="129369740131880" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\5.png">
+                                <collision-poly>
+                                    <point x="0.361328" y="0.503906" />
+                                    <point x="0.385742" y="0.53776" />
+                                    <point x="0.363281" y="0.567708" />
+                                    <point x="0.338867" y="0.53776" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="liberacao_7" pingpong="0" repeatcount="1" repeatto="0" sid="690509610845743" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala3\janela_esquerda\luzes porta\6.png">
+                                <collision-poly>
+                                    <point x="0.362305" y="0.507812" />
+                                    <point x="0.385742" y="0.533854" />
+                                    <point x="0.361328" y="0.56901" />
+                                    <point x="0.338867" y="0.536458" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="sala4">
+            <object-folder name="navegacao">
+                <object-type name="meio_sala4" sid="853748840845934">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="1" name="inicial" pingpong="0" repeatcount="1" repeatto="0" sid="963689923617936" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\backBateria.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="422585888090238" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\open.png" />
+                        </animation>
+                        <animation framecount="8" loop="0" name="alien_vazando" pingpong="0" repeatcount="0" repeatto="0" sid="275172556252102" speed="0">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\0.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\1.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\2.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\3.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\4.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\5.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\6.png" />
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\7.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="alien_fora" pingpong="0" repeatcount="1" repeatto="0" sid="996193797110634" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\direita\alien pocando\8.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="meio_para_esq4" sid="560350088462437">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="716829076509667" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="esquerda_sala4" sid="524807190777512">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="desligado" pingpong="0" repeatcount="1" repeatto="0" sid="763704442832072" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\esquerda\desligado.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="ligado" pingpong="0" repeatcount="1" repeatto="0" sid="928778786139893" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\esquerda\ligado.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="esquerda_para_meio" sid="691517337997124">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="622276427222605" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="voltar_meio4" sid="992485063539934">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985133388491861" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala1\img\DESEJA MESMO SAIR\000 (1).png">
+                                <collision-poly>
+                                    <point x="0.29" y="0.2" />
+                                    <point x="0.295" y="0.41" />
+                                    <point x="1" y="0.405" />
+                                    <point x="1" y="0.5" />
+                                    <point x="1" y="0.595" />
+                                    <point x="0.305" y="0.6" />
+                                    <point x="0.305" y="0.81" />
+                                    <point x="0" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="ir_janela4" sid="694780158977304">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="371494599804521" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="pilha" sid="341351372683382">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="432093807963826">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="621779470574716" speed="5">
+                            <frame duration="1" hotspotX="0.507463" hotspotY="0.502994" original-source="D:\faculdade\TCC\sala4\janela\pilha.png">
+                                <collision-poly>
+                                    <point x="0.134328" y="0.0538922" />
+                                    <point x="0.492537" y="0" />
+                                    <point x="0.865672" y="0.0538922" />
+                                    <point x="1" y="0.497006" />
+                                    <point x="1" y="1" />
+                                    <point x="0" y="1" />
+                                    <point x="0" y="0.497006" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="chave" sid="198318264080511">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="DragDrop" sid="890548549177845">
+                            <behavior id="DragnDrop" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="603604381002116" speed="5">
+                            <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="D:\faculdade\TCC\sala2\cheva.png">
+                                <collision-poly>
+                                    <point x="0.163636" y="0.102273" />
+                                    <point x="0.490909" y="0.0681818" />
+                                    <point x="0.836364" y="0.102273" />
+                                    <point x="0.618182" y="0.5" />
+                                    <point x="0.6" y="0.75" />
+                                    <point x="0.490909" y="0.909091" />
+                                    <point x="0.381818" y="0.761364" />
+                                    <point x="0.381818" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="porta" sid="508099279859117">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398041287824664" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="decoracao4" sid="343960616462488">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416982309742043" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\esquerda\mancebo.png">
+                                <collision-poly>
+                                    <point x="0.235352" y="0.5" />
+                                    <point x="0.223633" y="0.701823" />
+                                    <point x="0.205078" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="janela">
+                <object-type name="janela_sala4" sid="383476674594118">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="630448145616682" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\esquerda\janela\longe (1).png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="555603573725001" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\janela\oh no.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="osilos_sem_bateria" pingpong="0" repeatcount="1" repeatto="0" sid="913513302078766" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\janela\proximoSemPilha.png" />
+                        </animation>
+                        <animation framecount="1" loop="0" name="osilos_Com_bateria" pingpong="0" repeatcount="1" repeatto="0" sid="311490377429820" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\janela\próximo.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="janela_dialogo4" sid="198964497569486">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="929847484843271" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\osciloscopio.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.485437" />
+                                    <point x="0.655273" y="0.495146" />
+                                    <point x="0.5" y="0.660194" />
+                                    <point x="0.279297" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="592651037204946" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\taPegandoFogoBixo.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.184466" />
+                                    <point x="0.782227" y="0.495146" />
+                                    <point x="0.5" y="0.669903" />
+                                    <point x="0.213867" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="pilha" pingpong="0" repeatcount="1" repeatto="0" sid="253300908618066" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\pilha.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.184466" />
+                                    <point x="0.646484" y="0.495146" />
+                                    <point x="0.5" y="0.640777" />
+                                    <point x="0.314453" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="janela_alien4" sid="159137834107255">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428189006450159" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="text_janela4" sid="334667775297625">
+                    <plugin id="TextBox" />
+                </object-type>
+                <object-type name="botao_osilos" sid="418411325087097">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754858829367600" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+            <object-folder name="esquerda_sala">
+                <object-folder name="cardio">
+                    <object-type name="voltar_esqrd4" sid="421727610339752">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618780025678444" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala1\img\DESEJA MESMO SAIR\000 (1).png">
+                                    <collision-poly>
+                                        <point x="0.3" y="0.21" />
+                                        <point x="0.3" y="0.4" />
+                                        <point x="0.99" y="0.4" />
+                                        <point x="1" y="0.5" />
+                                        <point x="0.995" y="0.605" />
+                                        <point x="0.315" y="0.615" />
+                                        <point x="0.305" y="0.8" />
+                                        <point x="0" y="0.5" />
+                                    </collision-poly>
+                                </frame>
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                    <object-type name="text_cardio" sid="827335316105291">
+                        <plugin id="TextBox" />
+                    </object-type>
+                    <object-type name="botao_cardio" sid="230232280602886">
+                        <plugin id="Sprite" />
+                        <animation-folder>
+                            <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724170835319045" speed="5">
+                                <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                            </animation>
+                        </animation-folder>
+                    </object-type>
+                </object-folder>
+                <object-type name="alien_medico" sid="744988802711185">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540764210464383" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="dialogo_medico" sid="600338092186822">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="998899732856303" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\ligarEletrocardiograma.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.291262" />
+                                    <point x="0.642578" y="0.495146" />
+                                    <point x="0.933594" y="0.339806" />
+                                    <point x="0.5" y="0.300971" />
+                                    <point x="0.078125" y="0.223301" />
+                                    <point x="0.392578" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="nao_medico" pingpong="0" repeatcount="1" repeatto="0" sid="752401811591333" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\naoSouMedico.png">
+                                <collision-poly>
+                                    <point x="0.0527344" y="0.524272" />
+                                    <point x="0.5" y="0.504854" />
+                                    <point x="0.948242" y="0.514563" />
+                                    <point x="0.982422" y="0.495146" />
+                                    <point x="0.964844" y="0.650485" />
+                                    <point x="0.5" y="0.640777" />
+                                    <point x="0.0322266" y="0.679612" />
+                                    <point x="0.0195313" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="errado" pingpong="0" repeatcount="1" repeatto="0" sid="427493428681550" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\Não sou um profissional mas creio que está errado.png">
+                                <collision-poly>
+                                    <point x="0.0527344" y="0.524272" />
+                                    <point x="0.5" y="0.504854" />
+                                    <point x="0.948242" y="0.514563" />
+                                    <point x="0.982422" y="0.495146" />
+                                    <point x="0.964844" y="0.650485" />
+                                    <point x="0.5" y="0.640777" />
+                                    <point x="0.0322266" y="0.679612" />
+                                    <point x="0.0195313" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                        <animation framecount="1" loop="0" name="certo" pingpong="0" repeatcount="1" repeatto="0" sid="285334254200445" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="D:\faculdade\TCC\sala4\textos\tomeChave.png">
+                                <collision-poly>
+                                    <point x="0.5" y="0.252427" />
+                                    <point x="0.81543" y="0.495146" />
+                                    <point x="0.5" y="0.640777" />
+                                    <point x="0.181641" y="0.495146" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="eletro_background" sid="616755527951913">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320280694672903" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\faculdade\TCC\sala4\esquerda\eletrocardiograma.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="eletro" sid="343809856307279">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="215209860336967" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="quadro4" sid="434300594900587">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520531897712167" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\meira\Downloads\back.png" />
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-type name="Mouse" sid="470283822166154">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="444800954825910">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Browser" sid="751602908328000">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="NWjs" sid="363229065840907">
+            <plugin id="NodeWebkit" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout-folder name="sala1">
+            <layout>dir_sala.xml</layout>
+            <layout>meio_sala.xml</layout>
+            <layout>esq_sala.xml</layout>
+            <layout>painel_codigo.xml</layout>
+        </layout-folder>
+        <layout-folder name="menu">
+            <layout>sub_menu.xml</layout>
+            <layout>menu.xml</layout>
+        </layout-folder>
+        <layout-folder name="sala2">
+            <layout>meio_sala2.xml</layout>
+            <layout>esq_sala2.xml</layout>
+            <layout>dir_sala2.xml</layout>
+            <layout>quest_sala2.xml</layout>
+        </layout-folder>
+        <layout-folder name="sala3">
+            <layout>meio_sala3.xml</layout>
+            <layout>janela_direita3.xml</layout>
+            <layout>janela_esquerda3.xml</layout>
+        </layout-folder>
+        <layout-folder name="sala4">
+            <layout>meio_sala4.xml</layout>
+            <layout>esquerda_sala4.xml</layout>
+            <layout>janela_sala4.xml</layout>
+            <layout>cardiograma4.xml</layout>
+        </layout-folder>
+        <layout-folder name="temporario">
+            <layout>sem_sala.xml</layout>
+            <layout>agradecimentos.xml</layout>
+        </layout-folder>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>evento_menu.xml</event-sheet>
+        <event-sheet>evento_sala1.xml</event-sheet>
+        <event-sheet>evento_sala2.xml</event-sheet>
+        <event-sheet>evento_sala3.xml</event-sheet>
+        <event-sheet>evento_sala4.xml</event-sheet>
+        <event-sheet>utilitario.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+        <global-instance type="Keyboard" uid="54" />
+        <global-instance type="Browser" uid="170" />
+        <global-instance type="NWjs" uid="171" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
